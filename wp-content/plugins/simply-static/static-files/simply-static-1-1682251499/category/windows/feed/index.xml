@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Windows &#8211; Shreyas Jejurkar Blog</title>
+	<atom:link href="https://shreyasjejurkar.github.io/testwebsite/category/windows/feed/" rel="self" type="application/rss+xml" />
+	<link>https://shreyasjejurkar.github.io/testwebsite/</link>
+	<description></description>
+	<lastBuildDate>Wed, 29 Jun 2022 06:30:34 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.2</generator>
+	<item>
+		<title>How to fix &#8211; Could not found one or more components. please reinstall the application error.</title>
+		<link>https://shreyasjejurkar.github.io/testwebsite/2021/04/16/how-to-fix-could-not-found-one-or-more-components-please-reinstall-the-application-error/</link>
+		
+		<dc:creator><![CDATA[ShreyasJejurkar]]></dc:creator>
+		<pubDate>Fri, 16 Apr 2021 11:38:12 +0000</pubDate>
+				<category><![CDATA[Programming]]></category>
+		<category><![CDATA[Windows]]></category>
+		<category><![CDATA[sql server 2014]]></category>
+		<category><![CDATA[Visual Studio 2010]]></category>
+		<guid isPermaLink="false">https://mccshreyas.wordpress.com/?p=595</guid>
+
+					<description><![CDATA[Recently I was working on one of the projects where I was using SQL Server 2014 as a database and Visual Studio 2019. And suddenly I started getting the above error when I tried to open SQL Server 2014. I tried repairing the installation of SQL Server 2014 via the installer, but it did not [&#8230;]]]></description>
+										<content:encoded><![CDATA[
+<p>Recently I was working on one of the projects where I was using SQL Server 2014 as a database and Visual Studio 2019. And suddenly I started getting the above error when I tried to open SQL Server 2014. I tried repairing the installation of SQL Server 2014 via the installer, but it did not work, and I was getting the same error as before.&nbsp;</p>
+
+
+
+<p>So I got into thinking, like what I did before I was getting this error, then I realized that I have deleted the &#8220;Visual Studio 2010&#8221; folder from my Program Files (x86) folder. Because I was not using Visual Studio 2010, I was using the 2019 edition so technically, I don&#8217;t need that folder and its corresponding files to work, so to get some free space I deleted those folders and this is where I made the mistake.&nbsp;</p>
+
+
+
+<p>So after some research, I found that Visual Studio 2014 behind the scenes uses Visual Studio 2010 UI components for its rendering and its controls. That&#8217;s why if you compare the &#8220;Solution Explorer&#8221; UI from Visual Studio 2010, then it looks somewhat similar to &#8220;Object Explorer&#8221; in SQL Server 2014. Because they are the same under the hood and only the content is different.</p>
+
+
+
+<p>So does that mean to work with SQL Server 2014 I need to install Visual Studio 2010 although if I am not using it !? No, the UI (&#8220;UI Shell&#8221;) is a separate component from Visual Studio and SQL Server. As part of their installation, they install this component. And interestingly as it packs separately from these products so we can separately download that as well and install it. The component name is&nbsp;<strong>Visual Studio Isolated Shell</strong>.&nbsp;</p>
+
+
+
+<p>You can download the shell from the below link.&nbsp;</p>
+
+
+
+<p><a href="https://visualstudio.microsoft.com/vs/older-downloads/isolated-shell/" target="_blank" rel="noreferrer noopener">https://visualstudio.microsoft.com/vs/older-downloads/isolated-shell/</a></p>
+
+
+
+<p>But on that page when you accept a license, you will see a different version of that shell ranging from Visual Studio 2010 to 2015. So this is where we need to make the decision, and the following list might help to make that.&nbsp;</p>
+
+
+
+<p>1. SQL Server 2014 -&gt; Visual Studio 2010 isolated shell.&nbsp;<br>2. SQL Server 2016 -&gt; Visual Studio 2015 isolated shell.&nbsp;</p>
+
+
+
+<p>So make sure to install the correct shell, and give it a try to open SQL Server. In my case, it worked, but in your case, if it didn&#8217;t, then after installation of shell, repair the SQL Server installation and try again that will really help and will eventually solve your problem.&nbsp;<br><br>Thanks for reading..!</p>
+
+
+
+<p> </p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>How to &#8211; Disable Windows Defender on Windows 10 Home / Pro</title>
+		<link>https://shreyasjejurkar.github.io/testwebsite/2020/01/18/how-to-disable-windows-defender-on-windows-10-home-pro/</link>
+		
+		<dc:creator><![CDATA[ShreyasJejurkar]]></dc:creator>
+		<pubDate>Sat, 18 Jan 2020 08:13:51 +0000</pubDate>
+				<category><![CDATA[Windows]]></category>
+		<guid isPermaLink="false">https://mccshreyas.wordpress.com/?p=525</guid>
+
+					<description><![CDATA[Windows 10 comes with built-in virus protection called Windows Defender. It runs in the background and gives real-time protection to your system. Real-time protection means whenever it finds a new file in the system, for example, like when you copy a new file to the system from an external drive or download a new file [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Windows 10 comes with built-in virus protection called Windows Defender. It runs in the background and gives real-time protection to your system. Real-time protection means whenever it finds a new file in the system, for example, like when you copy a new file to the system from an external drive or download a new file from the internet, the defender will start scanning it for virus or malware before you actually open it, protecting the system from getting vulnerable and makes sure that its safe to execute.</p>
+<p>But sometimes, when the defender has configured for schedule system scan or when you&#8217;re using a software that creates a lot of temporary files in the background for its working, the defender will start eating a lot of resources to scan those files and making the system slow and unresponsive. I personally faced this problem while using Visual Studio and Adobe XD.</p>
+<p>Yes, there are ways to exclude those files from defender scanning, but most of the time I find myself disabling defender for that time, as it&#8217;s not recommended to disable Windows defender permanently.</p>
+<p>So, in today&#8217;s post am going to show you how you can disable Windows Defender to get rid of unwanted scanning. If you are on Windows 10 Pro edition, it’s simple to disable defender via Group Policy editor. But in today&#8217;s post am going to show you the steps that you can follow even on Windows 10 Home (as they don&#8217;t have group policy editor) to disable WD.</p>
+<p>The following steps are <strong>applicable for both Windows 10 Home &amp; Pro edition</strong>.</p>
+<ol>
+<li>Open registry editor by typing &#8216;regedit&#8217; in the search box.</li>
+<li>Then navigate to the following path under the registry.</li>
+</ol>
+<blockquote><p>HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender</p></blockquote>
+<p><img decoding="async" class="alignnone size-full wp-image-535" src="https://mccshreyas.files.wordpress.com/2020/01/screenshot-26.png" alt="Screenshot (26)" width="785" height="663" srcset="https://shreyasjejurkar.github.io/testwebsite/wp-content/uploads/2020/01/screenshot-26.png 785w, https://shreyasjejurkar.github.io/testwebsite/wp-content/uploads/2020/01/screenshot-26-300x253.png 300w, https://shreyasjejurkar.github.io/testwebsite/wp-content/uploads/2020/01/screenshot-26-768x649.png 768w" sizes="(max-width: 785px) 100vw, 785px" /></p>
+<ol start="3">
+<li> On the right panel, right-click on-screen and create a new DWORD (32 bit) value. <strong>New &gt; DWORD (32 bit) value</strong>.</li>
+</ol>
+<p><img decoding="async" class="alignnone size-full wp-image-537" src="https://mccshreyas.files.wordpress.com/2020/01/screenshot-29.png" alt="Screenshot (29).png" width="1075" height="547" srcset="https://shreyasjejurkar.github.io/testwebsite/wp-content/uploads/2020/01/screenshot-29.png 1075w, https://shreyasjejurkar.github.io/testwebsite/wp-content/uploads/2020/01/screenshot-29-300x153.png 300w, https://shreyasjejurkar.github.io/testwebsite/wp-content/uploads/2020/01/screenshot-29-1024x521.png 1024w, https://shreyasjejurkar.github.io/testwebsite/wp-content/uploads/2020/01/screenshot-29-768x391.png 768w" sizes="(max-width: 1075px) 100vw, 1075px" /></p>
+<ol start="3">
+<li>And create a new key with this text <strong>DisableAntiSpyware </strong>and change its value to 1.</li>
+</ol>
+<p><img decoding="async" class="alignnone size-full wp-image-536" src="https://mccshreyas.files.wordpress.com/2020/01/screenshot-28.png" alt="Screenshot (28)" width="1017" height="540" srcset="https://shreyasjejurkar.github.io/testwebsite/wp-content/uploads/2020/01/screenshot-28.png 1017w, https://shreyasjejurkar.github.io/testwebsite/wp-content/uploads/2020/01/screenshot-28-300x159.png 300w, https://shreyasjejurkar.github.io/testwebsite/wp-content/uploads/2020/01/screenshot-28-768x408.png 768w" sizes="(max-width: 1017px) 100vw, 1017px" /></p>
+<p>What this will do is, the Windows defender will read this key at start-up and as its value is 1 means true, the defender won&#8217;t start, and it will get disabled. <strong>Make sure you restart the system to get these steps working for you</strong>. And in case if you need to enable Windows defender again, then change the key (<strong>DisableAntiSpyware</strong>) value to <strong>0. </strong></p>
+<p style="text-align:justify;text-justify:inter-ideograph;">If you face any problem while performing the above steps, then make sure you put a comment below so that I can help you.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>How to &#8211; Fix MySQL Command line Client crashing problem.</title>
+		<link>https://shreyasjejurkar.github.io/testwebsite/2018/01/07/how-to-fix-mysql-command-line-crashing-problem/</link>
+					<comments>https://shreyasjejurkar.github.io/testwebsite/2018/01/07/how-to-fix-mysql-command-line-crashing-problem/#comments</comments>
+		
+		<dc:creator><![CDATA[ShreyasJejurkar]]></dc:creator>
+		<pubDate>Sun, 07 Jan 2018 09:59:28 +0000</pubDate>
+				<category><![CDATA[Windows]]></category>
+		<guid isPermaLink="false">https://mccshreyas.wordpress.com/?p=472</guid>
+
+					<description><![CDATA[MySQL is one of the popular and open-source Relational databases available in the market. And it supports connectivity for all popular programming languages including C++, JAVA, and C#. We can install the MySQL server on our machine by simply downloading the setup binaries from the official site and installing it just like we install any [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>MySQL is one of the popular and open-source Relational databases available in the market. And it supports connectivity for all popular programming languages including C++, JAVA, and C#.</p>
+<p>We can install the MySQL server on our machine by simply downloading the setup binaries from the <a href="https://www.mysql.com/downloads/" rel="noopener">official site</a> and installing it just like we install any other software. While installing setup will prompt you for the root password for the security of the database access.</p>
+<p><img decoding="async" class="alignnone size-full wp-image-475" src="https://mccshreyas.files.wordpress.com/2018/01/screenshot-85.png" alt="MySQL command line client" width="396" height="603" srcset="https://shreyasjejurkar.github.io/testwebsite/wp-content/uploads/2018/01/screenshot-85.png 396w, https://shreyasjejurkar.github.io/testwebsite/wp-content/uploads/2018/01/screenshot-85-197x300.png 197w" sizes="(max-width: 396px) 100vw, 396px" /></p>
+<p>After installing it successfully, you can now create and manage the MySQL database by opening the MySQL command-line client. But I found many users on the internet that are complaining about MySQL command-line client crashes after they typed the &#8216;correct&#8217; root password.</p>
+<p>Some days ago my machine also ran into the same problem. When I started to look into it in order to fix the issue, I found the main root cause of it. The problem was the <em>MySQL service was disabled somehow in the background</em>. That&#8217;s why although we typed the correct password, the MySQL command-line client was not able to contact its service to give access to the MySQL shell and because of that, it was crashing again and again. So if you are facing the same issue then this post is meant for you. Following are the simple steps that you should follow in order to fix the issue. So let&#8217;s get started&#8230;….</p>
+<h2><strong>Steps</strong></h2>
+<ol>
+<li>Press the Windows logo key + R simultaneously to open the &#8216;Run&#8217; dialog box</li>
+<li>In the &#8216;Run&#8217; dialog box type <strong>services.msc </strong>and hit enter to open the Services window. <img decoding="async" class="alignnone size-full wp-image-477" src="https://mccshreyas.files.wordpress.com/2018/01/screenshot-86.png" alt="Services.msc" width="400" height="205" srcset="https://shreyasjejurkar.github.io/testwebsite/wp-content/uploads/2018/01/screenshot-86.png 400w, https://shreyasjejurkar.github.io/testwebsite/wp-content/uploads/2018/01/screenshot-86-300x154.png 300w" sizes="(max-width: 400px) 100vw, 400px" /></li>
+<li>In the services window, search for <em>MySQL57</em> service and double click on it to open.<img decoding="async" class="alignnone size-full wp-image-478" src="https://mccshreyas.files.wordpress.com/2018/01/screenshot-87.png" alt="MySQL service" width="1101" height="625" srcset="https://shreyasjejurkar.github.io/testwebsite/wp-content/uploads/2018/01/screenshot-87.png 1101w, https://shreyasjejurkar.github.io/testwebsite/wp-content/uploads/2018/01/screenshot-87-300x170.png 300w, https://shreyasjejurkar.github.io/testwebsite/wp-content/uploads/2018/01/screenshot-87-1024x581.png 1024w, https://shreyasjejurkar.github.io/testwebsite/wp-content/uploads/2018/01/screenshot-87-768x436.png 768w" sizes="(max-width: 1101px) 100vw, 1101px" /></li>
+<li>You will notice that the service is either disabled (in startup type) or stopped in service status.</li>
+<li>Select Automatic or Automatic (Delayed start) in the select box of Startup type and click on apply. So that whenever your machine starts the MySQL service will start automatically in the background.<img decoding="async" class="alignnone size-full wp-image-479" src="https://mccshreyas.files.wordpress.com/2018/01/screenshot-88.png" alt="Screenshot (88)" width="1103" height="621" srcset="https://shreyasjejurkar.github.io/testwebsite/wp-content/uploads/2018/01/screenshot-88.png 1103w, https://shreyasjejurkar.github.io/testwebsite/wp-content/uploads/2018/01/screenshot-88-300x169.png 300w, https://shreyasjejurkar.github.io/testwebsite/wp-content/uploads/2018/01/screenshot-88-1024x577.png 1024w, https://shreyasjejurkar.github.io/testwebsite/wp-content/uploads/2018/01/screenshot-88-768x432.png 768w" sizes="(max-width: 1103px) 100vw, 1103px" /></li>
+<li>After that click on Start button to start the MySQL service on your machine. It will take some few seconds to start (wait is worth). Then click on apply and hit Ok. Then close the services window also.<img decoding="async" class="alignnone size-full wp-image-480" src="https://mccshreyas.files.wordpress.com/2018/01/screenshot-89.png" alt="Screenshot (89)" width="1103" height="621" srcset="https://shreyasjejurkar.github.io/testwebsite/wp-content/uploads/2018/01/screenshot-89.png 1103w, https://shreyasjejurkar.github.io/testwebsite/wp-content/uploads/2018/01/screenshot-89-300x169.png 300w, https://shreyasjejurkar.github.io/testwebsite/wp-content/uploads/2018/01/screenshot-89-1024x577.png 1024w, https://shreyasjejurkar.github.io/testwebsite/wp-content/uploads/2018/01/screenshot-89-768x432.png 768w" sizes="(max-width: 1103px) 100vw, 1103px" /></li>
+</ol>
+<p>Now try to open MySQL command-line client, enter the correct root password when prompted and hit enter. The MySQL shell will start without any issues and you will be able to manage your databases.</p>
+<h2>How to &#8211; Check MySQL service status</h2>
+<p>You can also check whether the MySQL service is running in the background or not. To do that open Task manager ( Press CTRL + SHIFT + ESC  simultaneously ) and look for mysqld service in the background process section. If it isn&#8217;t listed there then the service is stopped or disabled. You have to follow the same previous step to start it again.</p>
+<p><img decoding="async" class="alignnone size-full wp-image-483" src="https://mccshreyas.files.wordpress.com/2018/01/screenshot-91.png" alt="Task manager MySQL service" width="787" height="569" srcset="https://shreyasjejurkar.github.io/testwebsite/wp-content/uploads/2018/01/screenshot-91.png 787w, https://shreyasjejurkar.github.io/testwebsite/wp-content/uploads/2018/01/screenshot-91-300x217.png 300w, https://shreyasjejurkar.github.io/testwebsite/wp-content/uploads/2018/01/screenshot-91-768x555.png 768w" sizes="(max-width: 787px) 100vw, 787px" /></p>
+<p>So in this way, we can fix the crashing issue my MySQL command line client. The above steps are applicable to Windows 10/8.1/8/7. If you face any problem while performing steps make sure you hit a comment in the comment section below.</p>
+<p>Cheers&#8230;</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://shreyasjejurkar.github.io/testwebsite/2018/01/07/how-to-fix-mysql-command-line-crashing-problem/feed/</wfw:commentRss>
+			<slash:comments>30</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>How to install and configure TASM on Windows 7/8/10. </title>
+		<link>https://shreyasjejurkar.github.io/testwebsite/2017/03/27/how-to-install-and-configure-tasm-on-windows-7810/</link>
+					<comments>https://shreyasjejurkar.github.io/testwebsite/2017/03/27/how-to-install-and-configure-tasm-on-windows-7810/#comments</comments>
+		
+		<dc:creator><![CDATA[ShreyasJejurkar]]></dc:creator>
+		<pubDate>Mon, 27 Mar 2017 05:19:22 +0000</pubDate>
+				<category><![CDATA[Downloads]]></category>
+		<category><![CDATA[Windows]]></category>
+		<guid isPermaLink="false">https://mccshreyas.wordpress.com/?p=412</guid>
+
+					<description><![CDATA[Before we get started with TASM installation on a Windows machine, let’s get some knowledge about TASM and learn what it will do for us. Turbo Assembler (TASM) a small 16-bit computer program which enables us to write 16 bit i.e. x86 programming code on 32-bit machine. It can be used with any high level [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Before we get started with TASM installation on a Windows machine, let’s get some knowledge about TASM and learn what it will do for us.</p>
+<blockquote><p>Turbo Assembler (TASM) a small 16-bit computer program which enables us to write 16 bit i.e. x86 programming code on 32-bit machine. It can be used with any high level language compliers like GCC compiler set to build object files. So that programmers can use their daily routine machines to write 16-bit code and execute on x86 devices.</p></blockquote>
+<p>So let get started with installation steps. Before we get started to make sure that you have the following software. If not, you can download it by clicking on it.</p>
+<p><b>Requirements</b>.</p>
+<p>1. <a href="http://www.dosbox.com/download.php?main=1">DosBox software.</a></p>
+<p>2. &nbsp;<a href="https://drive.google.com/file/d/0BxFfQqBvZCltMHdNbFFCZVJkUlE/view?usp=sharing">TASM installation files</a>.<br />
+<b><br />
+Steps</b></p>
+<p>1. First, install DOSBox software on your system.</p>
+<p><a href="http://mccshreyas.files.wordpress.com/2017/03/wp-1490591369444.png"><img decoding="async" class="wp-image-401 alignnone size-full" src="http://mccshreyas.files.wordpress.com/2017/03/wp-1490591369444.png" alt="" width="460" height="311" srcset="https://shreyasjejurkar.github.io/testwebsite/wp-content/uploads/2017/03/wp-1490591369444.png 460w, https://shreyasjejurkar.github.io/testwebsite/wp-content/uploads/2017/03/wp-1490591369444-300x203.png 300w" sizes="(max-width: 460px) 100vw, 460px" /></a></p>
+<p>2. Just run the downloaded setup file to install as just like other software you install.</p>
+<p><a href="http://mccshreyas.files.wordpress.com/2017/03/wp-1490591399488.png"><img decoding="async" class="wp-image-402 alignnone size-full" src="http://mccshreyas.files.wordpress.com/2017/03/wp-1490591399488.png" alt="" width="549" height="478" srcset="https://shreyasjejurkar.github.io/testwebsite/wp-content/uploads/2017/03/wp-1490591399488.png 549w, https://shreyasjejurkar.github.io/testwebsite/wp-content/uploads/2017/03/wp-1490591399488-300x261.png 300w" sizes="(max-width: 549px) 100vw, 549px" /></a></p>
+<p>3. Then extract the TASM zip file.</p>
+<p>4. After that copy that extracted the folder to C drive of your system.</p>
+<p><a href="http://mccshreyas.files.wordpress.com/2017/03/wp-1490591426342.png"><img decoding="async" class="wp-image-403 alignnone size-full" src="http://mccshreyas.files.wordpress.com/2017/03/wp-1490591426342.png" alt="" width="1600" height="900" srcset="https://shreyasjejurkar.github.io/testwebsite/wp-content/uploads/2017/03/wp-1490591426342.png 1600w, https://shreyasjejurkar.github.io/testwebsite/wp-content/uploads/2017/03/wp-1490591426342-300x169.png 300w, https://shreyasjejurkar.github.io/testwebsite/wp-content/uploads/2017/03/wp-1490591426342-1024x576.png 1024w, https://shreyasjejurkar.github.io/testwebsite/wp-content/uploads/2017/03/wp-1490591426342-768x432.png 768w, https://shreyasjejurkar.github.io/testwebsite/wp-content/uploads/2017/03/wp-1490591426342-1536x864.png 1536w" sizes="(max-width: 1600px) 100vw, 1600px" /></a></p>
+<p>5. Now we have to mount our C drive to DosBox so that we can use our TASM libraries there.</p>
+<p>6. To do that go to the following path on your PC</p>
+<blockquote><p><b>For 32-bit PC</b></p>
+<p>C:\Program Files\DOSBOX-0.74</p>
+<p><b>For 64-bit PC</b></p>
+<p>C:\Program Files (x86) \DOSBOX-0.74</p></blockquote>
+<p>7. Then there you will see a file named “DOSBOX 0.74 Options” click on it to open.</p>
+<p><a href="http://mccshreyas.files.wordpress.com/2017/03/wp-1490591556492.png"><img decoding="async" class="wp-image-404 alignnone size-full" src="http://mccshreyas.files.wordpress.com/2017/03/wp-1490591556492.png" alt="" width="1600" height="900" srcset="https://shreyasjejurkar.github.io/testwebsite/wp-content/uploads/2017/03/wp-1490591556492.png 1600w, https://shreyasjejurkar.github.io/testwebsite/wp-content/uploads/2017/03/wp-1490591556492-300x169.png 300w, https://shreyasjejurkar.github.io/testwebsite/wp-content/uploads/2017/03/wp-1490591556492-1024x576.png 1024w, https://shreyasjejurkar.github.io/testwebsite/wp-content/uploads/2017/03/wp-1490591556492-768x432.png 768w, https://shreyasjejurkar.github.io/testwebsite/wp-content/uploads/2017/03/wp-1490591556492-1536x864.png 1536w" sizes="(max-width: 1600px) 100vw, 1600px" /></a></p>
+<p>8. It will open a text file in notepad. Then navigate to the last line of that file where it shows “# You can put your MOUNT lines here”.</p>
+<p><a href="http://mccshreyas.files.wordpress.com/2017/03/wp-1490591592589.png"><img decoding="async" class="wp-image-405 alignnone size-full" src="http://mccshreyas.files.wordpress.com/2017/03/wp-1490591592589.png" alt="" width="1600" height="900" srcset="https://shreyasjejurkar.github.io/testwebsite/wp-content/uploads/2017/03/wp-1490591592589.png 1600w, https://shreyasjejurkar.github.io/testwebsite/wp-content/uploads/2017/03/wp-1490591592589-300x169.png 300w, https://shreyasjejurkar.github.io/testwebsite/wp-content/uploads/2017/03/wp-1490591592589-1024x576.png 1024w, https://shreyasjejurkar.github.io/testwebsite/wp-content/uploads/2017/03/wp-1490591592589-768x432.png 768w, https://shreyasjejurkar.github.io/testwebsite/wp-content/uploads/2017/03/wp-1490591592589-1536x864.png 1536w" sizes="(max-width: 1600px) 100vw, 1600px" /></a></p>
+<p>9. Add the following lines after that.</p>
+<blockquote><p>mount c c://tasm</p>
+<p>c://</p></blockquote>
+<p>10. And save that file.</p>
+<p><a href="http://mccshreyas.files.wordpress.com/2017/03/wp-1490591602464.png"><img decoding="async" class="wp-image-406 alignnone size-full" src="http://mccshreyas.files.wordpress.com/2017/03/wp-1490591602464.png" alt="" width="1600" height="900" srcset="https://shreyasjejurkar.github.io/testwebsite/wp-content/uploads/2017/03/wp-1490591602464.png 1600w, https://shreyasjejurkar.github.io/testwebsite/wp-content/uploads/2017/03/wp-1490591602464-300x169.png 300w, https://shreyasjejurkar.github.io/testwebsite/wp-content/uploads/2017/03/wp-1490591602464-1024x576.png 1024w, https://shreyasjejurkar.github.io/testwebsite/wp-content/uploads/2017/03/wp-1490591602464-768x432.png 768w, https://shreyasjejurkar.github.io/testwebsite/wp-content/uploads/2017/03/wp-1490591602464-1536x864.png 1536w" sizes="(max-width: 1600px) 100vw, 1600px" /></a></p>
+<p>11. And now open DOSBOX. You’re done.<br />
+12. To run a TASM program copy your program file into the TASM folder which is under your C: drive.</p>
+<p><a href="http://mccshreyas.files.wordpress.com/2017/03/wp-1490591694938.png"><img decoding="async" class="wp-image-407 alignnone size-full" src="http://mccshreyas.files.wordpress.com/2017/03/wp-1490591694938.png" alt="" width="1600" height="900" srcset="https://shreyasjejurkar.github.io/testwebsite/wp-content/uploads/2017/03/wp-1490591694938.png 1600w, https://shreyasjejurkar.github.io/testwebsite/wp-content/uploads/2017/03/wp-1490591694938-300x169.png 300w, https://shreyasjejurkar.github.io/testwebsite/wp-content/uploads/2017/03/wp-1490591694938-1024x576.png 1024w, https://shreyasjejurkar.github.io/testwebsite/wp-content/uploads/2017/03/wp-1490591694938-768x432.png 768w, https://shreyasjejurkar.github.io/testwebsite/wp-content/uploads/2017/03/wp-1490591694938-1536x864.png 1536w" sizes="(max-width: 1600px) 100vw, 1600px" /></a></p>
+<p>13. And now open DOSBOX. And navigate to the TASM folder by typing <i>cd TASM</i> and hit enter.</p>
+<p><a href="http://mccshreyas.files.wordpress.com/2017/03/wp-1490591746100.png"><img decoding="async" class="wp-image-408 alignnone size-full" src="http://mccshreyas.files.wordpress.com/2017/03/wp-1490591746100.png" alt="" width="1003" height="530" srcset="https://shreyasjejurkar.github.io/testwebsite/wp-content/uploads/2017/03/wp-1490591746100.png 1003w, https://shreyasjejurkar.github.io/testwebsite/wp-content/uploads/2017/03/wp-1490591746100-300x159.png 300w, https://shreyasjejurkar.github.io/testwebsite/wp-content/uploads/2017/03/wp-1490591746100-768x406.png 768w" sizes="(max-width: 1003px) 100vw, 1003px" /></a></p>
+<p>14. Now type tasm &nbsp;&lt;program_name&gt;. Replace &lt;program_name&gt; with your actual program name. in my case, my program name is the timer so I will type tasm timer.asm</p>
+<p><a href="http://mccshreyas.files.wordpress.com/2017/03/wp-1490591761960.png"><img decoding="async" class="wp-image-409 alignnone size-full" src="http://mccshreyas.files.wordpress.com/2017/03/wp-1490591761960.png" alt="" width="996" height="531" srcset="https://shreyasjejurkar.github.io/testwebsite/wp-content/uploads/2017/03/wp-1490591761960.png 996w, https://shreyasjejurkar.github.io/testwebsite/wp-content/uploads/2017/03/wp-1490591761960-300x160.png 300w, https://shreyasjejurkar.github.io/testwebsite/wp-content/uploads/2017/03/wp-1490591761960-768x409.png 768w" sizes="(max-width: 996px) 100vw, 996px" /></a></p>
+<p>15. After you hit enter. You will see an error, warning messages. If there isn’t anything wrong with your program syntactically, you will see none there.</p>
+<p><a href="http://mccshreyas.files.wordpress.com/2017/03/wp-1490591792111.png"><img decoding="async" class="wp-image-411 alignnone size-full" src="http://mccshreyas.files.wordpress.com/2017/03/wp-1490591792111.png" alt="" width="1005" height="535" srcset="https://shreyasjejurkar.github.io/testwebsite/wp-content/uploads/2017/03/wp-1490591792111.png 1005w, https://shreyasjejurkar.github.io/testwebsite/wp-content/uploads/2017/03/wp-1490591792111-300x160.png 300w, https://shreyasjejurkar.github.io/testwebsite/wp-content/uploads/2017/03/wp-1490591792111-768x409.png 768w" sizes="(max-width: 1005px) 100vw, 1005px" /></a></p>
+<p>16. And now link your program to that type <i>tlink &lt;program_name&gt; </i>and hit enter. And now execute program by typing &lt;program_name&gt; only.<br />
+17. The program will start executing. To stop execution type exit and hit enter.</p>
+<p>So in this way you can install TASM on your system and execute x86 code on your machine. This tutorial is applicable to Windows 7/8/8.1/10.</p>
+<p>If you face any problem while doing this, make sure that you hit the comment below with your problem.</p>
+<p><a href="https://drive.google.com/file/d/0BxFfQqBvZCltMHdNbFFCZVJkUlE/view?usp=sharing">via</a></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://shreyasjejurkar.github.io/testwebsite/2017/03/27/how-to-install-and-configure-tasm-on-windows-7810/feed/</wfw:commentRss>
+			<slash:comments>13</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>How to manually install Android/Windows Phone driver on Windows 7/8/8.1/10 PC</title>
+		<link>https://shreyasjejurkar.github.io/testwebsite/2016/12/22/how-to-manually-install-androidwindows-phone-driver-on-windows-788-110-pc/</link>
+		
+		<dc:creator><![CDATA[ShreyasJejurkar]]></dc:creator>
+		<pubDate>Thu, 22 Dec 2016 10:13:30 +0000</pubDate>
+				<category><![CDATA[Windows]]></category>
+		<category><![CDATA[Windows phone]]></category>
+		<guid isPermaLink="false">https://mccshreyas.wordpress.com/?p=344</guid>
+
+					<description><![CDATA[Most of the users face the problem of smartphone connectivity to the PC due to lack of its driver. Most of the users face following problem while connecting their phone to the PC. 1. I connected the phone to the PC via USB but can&#8217;t see in File explorer. 2. I connected phone but receive [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Most of the users face the problem of smartphone connectivity to the PC due to lack of its driver. Most of the users face following problem while connecting their phone to the PC.</p>
+<blockquote><p>1. I connected the phone to the PC via USB but can&#8217;t see in File explorer.<br />
+2. I connected phone but receive message like &#8216;malfunctioning USB device&#8217;.<br />
+3. Recive message like &#8216;Windows can&#8217;t find driver for the device&#8217;.</p></blockquote>
+<p>Generally, Windows OS will automatically install the driver for your phone as soon as you connect it to the PC. But sometimes it didn&#8217;t happen (most of the time because of antivirus. Antivirus blocks the installation of the driver) and at that moment we have to install the driver manually.</p>
+<p>Many of us will try to download drivers for the phone from the internet. But Windows already have it and <strong>you don&#8217;t need to download drivers for it from the internet</strong>. By default, Windows consider your phone as <strong>&#8216;Portable device&#8217;</strong> and for portable devices, it automatically installs <strong>MTP USB </strong>driver when you first connect your phone to the PC. But if you want to install this driver manually you can follow the following steps. And also those who are facing above problems can follow the steps to manually install phone driver. In my case, the phone is Lumia 520 (Windows Phone) but these <strong>steps are also applicable for Android devices too</strong>.</p>
+<p><strong>Steps</strong><br />
+1. First, connect your phone to the PC via a working USB cable to the working USB port.<br />
+2. After that on PC press <strong>Windows logo key + X </strong>simultaneously. From the menu open <strong>Device manager</strong>.</p>
+<p><img decoding="async" class="alignnone size-full;" src="http://mccshreyas.files.wordpress.com/2016/12/savedpicture-20161221204457.png" /></p>
+<p>3. In device manager, you will see your mobile name under <strong>Other devices</strong> section and will be having exclamation mark under it.</p>
+<p><img decoding="async" class="alignnone size-full;" src="http://mccshreyas.files.wordpress.com/2016/12/savedpicture-20161221211334.png" /></p>
+<p>4. Right-click on your mobile name and click on the first option i.e. <strong>update driver software</strong>.</p>
+<p><img decoding="async" class="alignnone size-full;" src="http://mccshreyas.files.wordpress.com/2016/12/savedpicture-20161221211552.png" /></p>
+<p>5. You will see a new window asking you <strong>How do you want to search for driver software?</strong> in that <strong>select second option</strong> i.e. &#8216;Browse my computer for driver software&#8217; and click on it.</p>
+<p><img decoding="async" class="alignnone size-full;" src="http://mccshreyas.files.wordpress.com/2016/12/savedpicture-20161221211753.png" /></p>
+<p>6. On the second window click on the option named as <strong>Let me pick from a list of device drivers on my computer</strong>.<br />
+7. Another new window will open and will show you common hardware types. From that list look for <strong>portable devices </strong>and click on it.</p>
+<p><img decoding="async" class="alignnone size-full;" src="http://mccshreyas.files.wordpress.com/2016/12/savedpicture-2016122215371.png" /></p>
+<p>8. In next window select <strong>MTP USB device</strong> (select one among them) and click on next button. And wait for seconds so that Windows will install the driver for your phone.</p>
+<p><img decoding="async" class="alignnone size-full;" src="http://mccshreyas.files.wordpress.com/2016/12/savedpicture-20161222153811.png" /></p>
+<p>9. If installation gets successfully you will receive the message like <strong>Windows has successfully updated the driver software for your device</strong>.<br />
+10. And <u>if not then select another MTP USB driver and try with that</u>.</p>
+<p><img decoding="async" class="alignnone size-full;" src="http://mccshreyas.files.wordpress.com/2016/12/savedpicture-20161222153928.png" /></p>
+<p>11. After installation successful, you can access your files of your phone from &#8216;My PC&#8217; (file explorer). You can see your phone under Devices &amp; drivers.</p>
+<p><img decoding="async" class="alignnone size-full;" src="http://mccshreyas.files.wordpress.com/2016/12/savedpicture-20161222154030.png" /></p>
+<p>So this is the simplest method by which you can install the driver of your smartphone (Android or Windows Phone) on PC.<br />
+These steps are applicable to Windows 7/8/8.1/10</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>How To Reset Windows Firewall To Defaults Settings In Windows 7/8/8.1/10</title>
+		<link>https://shreyasjejurkar.github.io/testwebsite/2016/12/21/how-to-reset-windows-firewall-to-defaults-settings-in-windows-788-110/</link>
+		
+		<dc:creator><![CDATA[ShreyasJejurkar]]></dc:creator>
+		<pubDate>Wed, 21 Dec 2016 09:30:56 +0000</pubDate>
+				<category><![CDATA[Windows]]></category>
+		<guid isPermaLink="false">https://mccshreyas.wordpress.com/?p=324</guid>
+
+					<description><![CDATA[Windows firewall is one the great utility in Windows operating system. Introduced in Windows XP, since then Microsoft has improved the security and features of Windows firewall a lot more, giving users more protection for their networks and from small online threats. But in case if you misconfigured that and gets locked in bad connection [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Windows firewall is one the great utility in Windows operating system. Introduced in Windows XP, since then Microsoft has improved the security and features of Windows firewall a lot more, giving users more protection for their networks and from small online threats.<br />
+But in case if you misconfigured that and gets locked in bad connection or no connection issue and wants to reset it to default, then my today&#8217;s post is for you. Following steps will help you reset the Windows firewall to the default settings. There are many ways actually to do this but I am gonna tell you the simplest way. Follow the following steps.<br />
+1. Press <strong>Windows logo key + X</strong> simultaneously.<br />
+2. From the menu select &#8216;Command Prompt (Admin)&#8217; and open it.<br />
+3. Then type or copy/paste the following command carefully.</p>
+<blockquote><p>netsh advfirewall reset</p></blockquote>
+<p>4. And hit enter. This will reset all the custom rules of Windows firewall and will bring it to defaults. You will receive the message like &#8216;Ok&#8217;.</p>
+<p>So this is the simplest way to reset the Windows firewall. These steps are applicable to Windows 7/8/8.1/10.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Enable F8 Key Safe Mode For Troubleshooting in Windows 10</title>
+		<link>https://shreyasjejurkar.github.io/testwebsite/2016/12/20/enable-f8-key-safe-mode-for-troubleshooting-in-windows-10/</link>
+		
+		<dc:creator><![CDATA[ShreyasJejurkar]]></dc:creator>
+		<pubDate>Tue, 20 Dec 2016 15:26:30 +0000</pubDate>
+				<category><![CDATA[Windows]]></category>
+		<guid isPermaLink="false">https://mccshreyas.wordpress.com/?p=320</guid>
+
+					<description><![CDATA[With Windows 10, Microsoft has improved the logic behind the booting of OS much more, making it faster than ever before. From my personal experience, my system boots only in 5 seconds although I have 13 application in the start-up. But on another side, Microsoft removed the easy way to enter into safe mode on [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>With Windows 10, Microsoft has improved the logic behind the booting of OS much more, making it faster than ever before. From my personal experience, my system boots only in 5 seconds although I have 13 application in the start-up.<br />
+But on another side, Microsoft removed the easy way to enter into safe mode on Windows 10. With Windows 7 we can easily boot into Windows safe mode at the start by rapidly pressing the F8 key as soon as BIOS loads. This key acts like the lifesaver for those whose system gets locked in continuous restart due to some malware or installing some unsupported drivers. But there is an easy way to again enable this F8 key for troubleshooting in Windows 10. So the following guide will help you to enable that.<br />
+Follow the steps.<br />
+1. Press <strong>Windows Logo key + X </strong>simultaneously. As soon as you press, the menu will pop-up from lower left corner called as &#8216;Power user menu&#8217;.<br />
+<a href="http://mccshreyas.files.wordpress.com/2016/12/savedpicture-2016122021016.png"><br />
+<img decoding="async" class="alignnone size-full;" src="http://mccshreyas.files.wordpress.com/2016/12/savedpicture-2016122021016.png" /><br />
+</a><br />
+2. In that click on &#8216;Command Prompt (Admin)&#8217; to open it.<br />
+3. After that type following command carefully in CMD</p>
+<blockquote><p>bcdedit /set {default} bootmenupolicy legacy</p></blockquote>
+<p><a href="http://mccshreyas.files.wordpress.com/2016/12/savedpicture-2016122021024.png"><br />
+<img decoding="async" class="alignnone size-full;" src="http://mccshreyas.files.wordpress.com/2016/12/savedpicture-2016122021024.png" /><br />
+</a><br />
+4. And hit enter. If you type that command correctly you will receive the message like this <strong>The operation completed successfully</strong>.<br />
+<a href="http://mccshreyas.files.wordpress.com/2016/12/savedpicture-2016122021032.png"><br />
+<img decoding="async" class="alignnone size-full;" src="http://mccshreyas.files.wordpress.com/2016/12/savedpicture-2016122021032.png" /><br />
+</a><br />
+And done. You have just enabled the F8 key for troubleshooting in Windows 10. Just restart the system. And as soon as your PC starts rapidly press F8 key on the keyboard. And you will see the &#8216;Safe Mode&#8217; menu on the screen. And from there you can easily boot into Safe mode and can easily troubleshoot your problem from there.<br />
+If you face any problem doing this, make sure that you hit comment below.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>How to &#8211; Solve Team explorer fatal error during Visual Studio installation</title>
+		<link>https://shreyasjejurkar.github.io/testwebsite/2016/09/11/how-to-solve-team-explorer-fatal-error-during-visual-studio-installation/</link>
+		
+		<dc:creator><![CDATA[ShreyasJejurkar]]></dc:creator>
+		<pubDate>Sun, 11 Sep 2016 08:21:12 +0000</pubDate>
+				<category><![CDATA[Downloads]]></category>
+		<category><![CDATA[Windows]]></category>
+		<guid isPermaLink="false">https://mccshreyas.wordpress.com/?p=312</guid>
+
+					<description><![CDATA[Recently I started developing Universal Windows Platform (UWP) apps for Windows 10 devices, a jump from WPF -&#62; UWP. And my experience with that is just great. Just code once and deploy it on multiple (Windows 10) devices without changing a single line of code (and that’s what today’s developer needs). But the way for [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Recently I started developing <a href="https://msdn.microsoft.com/en-us/windows/uwp/get-started/whats-a-uwp">Universal Windows Platform (UWP) </a>apps for Windows 10 devices, a jump from WPF -&gt; UWP. And my experience with that is just great. Just code once and deploy it on multiple (Windows 10) devices without changing a single line of code (and that’s what today’s developer needs). But the way for me was not so simple. For over two days I was finding the way to troubleshoot the fatal error of Visual Studio 2015 community edition. While configuring VS2015 for UWP apps development the Team Explorer fatal error keeps coming and making an obstacle for installation. I binged, googled it many times for solution but the result was zero. But with following steps I managed to troubleshoot that fatal error. I have seen many people are frustrated with the same problem. So in my today’s post, I am going to tell the troubleshooting step that you should perform to solve the problem.</p>
+<p><strong>Steps</strong><br />
+1. <strong>Clean up temporary files</strong><br />
+For that press Windows logo key + R. ‘Run’ window will come up and in that text box type ‘%temp%’ (without quotes) and hit enter.<br />
+<a href="http://mccshreyas.files.wordpress.com/2016/09/savedpicture-2016911135610.png"><br />
+<img decoding="async" class="alignnone size-full;" src="http://mccshreyas.files.wordpress.com/2016/09/savedpicture-2016911135610.png" /><br />
+</a><br />
+The Explorer will navigate you to ‘temp’ (temporary files) folder. In that folder select all files (Ctrl + A) and delete them. <a href="http://mccshreyas.files.wordpress.com/2016/09/savedpicture-2016911135615.png"><br />
+<img decoding="async" class="alignnone size-full;" src="http://mccshreyas.files.wordpress.com/2016/09/savedpicture-2016911135615.png" /><br />
+</a></p>
+<p>2. <strong>Repair the registry </strong><br />
+To do that you can use <a href="http://www.paretologic.com/products/regcurepro/">RegCure Pro tool</a> or <a href="http://www.iobit.com/en/advancedsystemcarefree.php">Registry Cleaner from Advance system care </a>and run the tool. After you, open Registry Cleaner tool at the bottom check the box of Deep clean and click on scan. That will scan your registry files and will find errors. After scan completed select all error and click on fix it button at the top.</p>
+<p>After you done all these above steps Re-run the visual studio setup and try to install it. It will work like a charm. If you any doubt or any problem while doing this, you can ask me in the comment section below.<br />
+Let me know is your problem solved</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>How to &#8211; Disable/Remove Search Box From Windows 10 Taskbar</title>
+		<link>https://shreyasjejurkar.github.io/testwebsite/2016/07/31/how-to-disableremove-search-box-from-windows-10-taskbar/</link>
+		
+		<dc:creator><![CDATA[ShreyasJejurkar]]></dc:creator>
+		<pubDate>Sun, 31 Jul 2016 07:22:32 +0000</pubDate>
+				<category><![CDATA[Windows]]></category>
+		<guid isPermaLink="false">https://mccshreyas.wordpress.com/?p=296</guid>
+
+					<description><![CDATA[In today’s post, I am going to tell a simple method by which you can hide the search box from taskbar of Windows 10. Microsoft ported Cortana, a personal digital assistant from Windows Phone 8.1 to Windows 10 giving her more power and more intelligence. But some of them don’t like her as she keeps [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>In today’s post, I am going to tell a simple method by which you can hide the search box from taskbar of Windows 10.<br />
+Microsoft ported Cortana, a personal digital assistant from Windows Phone 8.1 to Windows 10 giving her more power and more intelligence. But some of them don’t like her as she keeps eye on your daily usage of computer and based on that she gives you a suggestion about different things and stuff. So most of them disable Cortana in Windows 10. And also some of the people didn’t like the big search box at the bottom. If you’re one of them then today&#8217;s post is for you. Follow the steps below and remove it from the taskbar and get a feel like Windows 7 taskbar.</p>
+<p><strong>Steps </strong><br />
+1. Right click on the taskbar.<br />
+2. Then click on “search” option from the menu and click hide.</p>
+<p><a href="http://mccshreyas.files.wordpress.com/2016/07/savedpicture-2016731125619.png"><br />
+<img decoding="async" class="alignnone size-full;" src="http://mccshreyas.files.wordpress.com/2016/07/savedpicture-2016731125619.png" /><br />
+</a><br />
+3. And now the search box is now hidden. And it’s not completely gone.</p>
+<p>You can still search, just press the start button on the keyboard. And then type something, once you start typing the search box get invoke and will give you search result.<br />
+Microsoft hasn’t provided any option to completely disable or remove that search box. And also I personally don’t suggest it do that. Because it’s quite helpful if you’re are finding something. And also it indexes full computer and not only specific folder or drive. So enjoy it.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>How to &#8211; Enable Full Screen Start Menu In Windows 10</title>
+		<link>https://shreyasjejurkar.github.io/testwebsite/2016/07/25/how-to-enable-full-screen-start-menu-in-windows-10/</link>
+		
+		<dc:creator><![CDATA[ShreyasJejurkar]]></dc:creator>
+		<pubDate>Mon, 25 Jul 2016 08:36:43 +0000</pubDate>
+				<category><![CDATA[Windows]]></category>
+		<guid isPermaLink="false">https://mccshreyas.wordpress.com/?p=292</guid>
+
+					<description><![CDATA[With Windows 10, Microsoft has made some drastic modifications to its start menu. Making it more beautiful, useful and lovable. We know start menu opens at bottom left corner (by default) in Windows 7. And with Windows 8 Microsoft has made it full screen with horizontal scroll. But with 10, Microsoft has made an option [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>With Windows 10, Microsoft has made some drastic modifications to its start menu. Making it more beautiful, useful and lovable. We know start menu opens at bottom left corner (by default) in Windows 7. And with Windows 8 Microsoft has made it full screen with horizontal scroll. But with 10, Microsoft has made an option available for users by which users can change this type of setting. Users can switch to full-screen start menu with one click. So today in my post I am going to tell that method. It’s very simple.</p>
+<p><strong>Steps. </strong><br />
+1. Navigate to the Settings app on your computer.<br />
+2. Then go to personalization settings. In that click on “Start” sub settings<br />
+3. And then on the left-hand side, there is the fifth option of “Use Start full screen”.</p>
+<p><a href="http://mccshreyas.files.wordpress.com/2016/07/savedpicture-201672514847.png"><br />
+<img decoding="async" class="alignnone size-full;" src="http://mccshreyas.files.wordpress.com/2016/07/savedpicture-201672514847.png" /><br />
+</a><br />
+4. Enable that by clicking. And Done.</p>
+<p>And now click on start button on bottom left corner and now you will get a full-screen start screen with your desktop background which looks pretty amazing. And animations of that are so attractive, isn’t it??</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>

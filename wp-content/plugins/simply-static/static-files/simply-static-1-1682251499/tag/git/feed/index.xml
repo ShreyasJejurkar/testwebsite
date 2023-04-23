@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>git &#8211; Shreyas Jejurkar Blog</title>
+	<atom:link href="https://shreyasjejurkar.github.io/testwebsite/tag/git/feed/" rel="self" type="application/rss+xml" />
+	<link>https://shreyasjejurkar.github.io/testwebsite/</link>
+	<description></description>
+	<lastBuildDate>Sun, 25 Apr 2021 08:39:42 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.2</generator>
+	<item>
+		<title>How to &#8211; Change last git commit message.</title>
+		<link>https://shreyasjejurkar.github.io/testwebsite/2021/04/25/how-to-change-last-git-commit-message/</link>
+		
+		<dc:creator><![CDATA[ShreyasJejurkar]]></dc:creator>
+		<pubDate>Sun, 25 Apr 2021 08:39:42 +0000</pubDate>
+				<category><![CDATA[Programming]]></category>
+		<category><![CDATA[commit]]></category>
+		<category><![CDATA[git]]></category>
+		<category><![CDATA[version-control]]></category>
+		<guid isPermaLink="false">https://mccshreyas.com/?p=654</guid>
+
+					<description><![CDATA[In today’s post, I will walk you through the steps needed to change the last commit message in git version control.&#160;&#160; If you don’t know, git is a very popular, distributed version control system often used in software development to intelligently manages code changes which are done by several people in a large software project.&#160;&#160; [&#8230;]]]></description>
+										<content:encoded><![CDATA[
+<p>In today’s post, I will walk you through the steps needed to change the last commit message in git version control.&nbsp;&nbsp;</p>
+
+
+
+<p>If you don’t know, git is a very popular, distributed version control system often used in software development to intelligently manages code changes which are done by several people in a large software project.&nbsp;&nbsp;</p>
+
+
+
+<p>Most often I face the problem where I need to change my commit message after I make a commit with a bunch of changes. If you are using the git command-line interface, just like I do, then the following are the steps that are needed to change the commit message.&nbsp;&nbsp;</p>
+
+
+
+<p class="has-medium-font-size" value="&lt;amp-fit-text layout=&quot;fixed-height&quot; min-font-size=&quot;6&quot; max-font-size=&quot;72&quot; height=&quot;80&quot;&gt;&lt;strong&gt;Steps -&nbsp;&lt;/strong&gt;&lt;/amp-fit-text&gt;"><strong>Steps &#8211;&nbsp;</strong></p>
+
+
+
+<ol><li>First, check the history with <code>git log –oneline</code> to check your previous commit message.&nbsp;&nbsp;</li></ol>
+
+
+
+<div class="wp-block-image"><figure class="aligncenter size-large is-resized"><a href="https://mccshreyas.files.wordpress.com/2021/04/image.png"><img decoding="async" src="https://mccshreyas.files.wordpress.com/2021/04/image.png?w=866" alt="" class="wp-image-656" width="690" height="218" srcset="https://shreyasjejurkar.github.io/testwebsite/wp-content/uploads/2021/04/image.png 866w, https://shreyasjejurkar.github.io/testwebsite/wp-content/uploads/2021/04/image-300x95.png 300w, https://shreyasjejurkar.github.io/testwebsite/wp-content/uploads/2021/04/image-768x243.png 768w" sizes="(max-width: 690px) 100vw, 690px" /></a><figcaption>git local history<br><br></figcaption></figure></div>
+
+
+
+<p>As you can see above &#8220;Added <code>GetEmailService()</code> function&#8221; is the last commit message. I want to change it to a more specific message.</p>
+
+
+
+<p>2. To change that run following the git command. Following is the format of that command&nbsp;&nbsp;</p>
+
+
+
+<p><code>git commit --amend -m "your new message" </code><br><br>In my case following is my new message.</p>
+
+
+
+<div class="wp-block-image"><figure class="aligncenter size-large"><a href="https://mccshreyas.files.wordpress.com/2021/04/image-1.png"><img decoding="async" width="963" height="75" src="https://mccshreyas.files.wordpress.com/2021/04/image-1.png?w=963" alt="" class="wp-image-660" srcset="https://shreyasjejurkar.github.io/testwebsite/wp-content/uploads/2021/04/image-1.png 963w, https://shreyasjejurkar.github.io/testwebsite/wp-content/uploads/2021/04/image-1-300x23.png 300w, https://shreyasjejurkar.github.io/testwebsite/wp-content/uploads/2021/04/image-1-768x60.png 768w" sizes="(max-width: 963px) 100vw, 963px" /></a><figcaption>Change last git commit message</figcaption></figure></div>
+
+
+
+<p>3. Once done, check your history with <code>git log –-oneline</code>, your last message commit message will be updated with the new one.  </p>
+
+
+
+<div class="wp-block-image"><figure class="aligncenter size-large"><a href="https://mccshreyas.files.wordpress.com/2021/04/image-2.png"><img decoding="async" width="1011" height="169" src="https://mccshreyas.files.wordpress.com/2021/04/image-2.png?w=1011" alt="" class="wp-image-662" srcset="https://shreyasjejurkar.github.io/testwebsite/wp-content/uploads/2021/04/image-2.png 1011w, https://shreyasjejurkar.github.io/testwebsite/wp-content/uploads/2021/04/image-2-300x50.png 300w, https://shreyasjejurkar.github.io/testwebsite/wp-content/uploads/2021/04/image-2-768x128.png 768w" sizes="(max-width: 1011px) 100vw, 1011px" /></a><figcaption>Updated message </figcaption></figure></div>
+
+
+
+<p>As you can see it’s quite easy to change the last commit message in one git command.<br>For me these changes were not pushed to the remote repository, but if you have already pushed commits to the remote repository and wanted to update the commit message on the remote repository then along with the above-mentioned steps at the end execute the following command to push new commit message to the remote repository.<br><br><code>git push --force branch-name</code></p>
+
+
+
+<p>Make sure to change the branch name with your branch name, to push to that branch. Once done the commit message will be updated in the remote branch as well.</p>
+
+
+
+<p>So, this was a short and simple post to the most occurring problem while working with the git version control system. I hope you liked it, if you have any questions or any doubts, please let me in the comment section below.</p>
+
+
+
+<p>Thanks for reading…</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>
