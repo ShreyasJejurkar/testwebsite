@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>visualstudio C# &#8211; firsttest</title>
+	<atom:link href="https://shreyasjejurkar.github.io/testwebsite/tag/visualstudio-c/feed/" rel="self" type="application/rss+xml" />
+	<link>https://shreyasjejurkar.github.io/testwebsite/</link>
+	<description></description>
+	<lastBuildDate>Thu, 30 Jun 2022 15:14:26 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.2</generator>
+	<item>
+		<title>How to make Visual Studio to start ASP.NET Core debugging in same browser window</title>
+		<link>https://shreyasjejurkar.github.io/testwebsite/how-to-make-visual-studio-to-start-asp-net-core-debugging-in-same-browser-window/</link>
+					<comments>https://shreyasjejurkar.github.io/testwebsite/how-to-make-visual-studio-to-start-asp-net-core-debugging-in-same-browser-window/#respond</comments>
+		
+		<dc:creator><![CDATA[ShreyasJejurkar]]></dc:creator>
+		<pubDate>Thu, 30 Jun 2022 15:14:26 +0000</pubDate>
+				<category><![CDATA[Programming]]></category>
+		<category><![CDATA[aspnetcore]]></category>
+		<category><![CDATA[visualstudio C#]]></category>
+		<guid isPermaLink="false">https://shreyasjejurkar.com/?p=853</guid>
+
+					<description><![CDATA[If you are working with ASP.NET or ASP.NET Core projects in Visual Studio for developing web applications, then you might have come across this wired issue in Visual Studio. The issue is whenever you start a debugging session (F5) inside Visual Studio for web projects, it always opens a new browser window (maybe chrome/edge based [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>If you are working with ASP.NET or ASP.NET Core projects in Visual Studio for developing web applications, then you might have come across this wired issue in Visual Studio.</p>
+<p>The issue is whenever you start a debugging session (F5) inside Visual Studio for web projects, it always opens a new browser window (maybe chrome/edge based on your default preferences) for each debugging session. I don&#8217;t think that&#8217;s a good experience, because most of us developers have an already open browser window that actually opens most of the time to search for bug fixes or create PR to GitHub or Azure DevOps. So having 2 separate browser windows puts a lot of pressure on RAM. And also it&#8217;s not like the chrome opens faster each time, every time it takes some initial seconds to open and then load the actual project in it.</p>
+<p>So in this blog post, I will let you know the steps needed for avoiding a new window each time and making Visual Studio actually open in a new tab inside an already open browser window.</p>
+<p>Steps &#8211;</p>
+<ol>1. Open Visual Studio and navigate to Tools -&gt; Options.</ol>
+<p><img decoding="async" class="aligncenter size-full wp-image-857" src="https://shreyasjejurkar.com/wp-content/uploads/2022/06/vs-options.png" alt="tools-&gt;options settings vs" width="868" height="524" /></p>
+<ol>2. After that in the Projects and Solutions section go to Web projects. There check the checkbox which is highlighted below.</ol>
+<p><img decoding="async" class="aligncenter size-full wp-image-856" src="https://shreyasjejurkar.com/wp-content/uploads/2022/06/settings-1.png" alt="third checkbox tick" width="976" height="682" /></p>
+<ol>3. Then go to Debugging -&gt; General tab. And uncheck the checkbox which is highlighted below.</ol>
+<p><img decoding="async" class="aligncenter size-full wp-image-858" src="https://shreyasjejurkar.com/wp-content/uploads/2022/06/settings-2.png" alt="debugging general settings" width="1101" height="688" /></p>
+<ol>4. And then lastly to save these changes, click on the Ok button on the window.</ol>
+<p>And that&#8217;s it. These two changes will make sure the Visual Studio will open the new debugging tab in the same browser window instead of opening new.</p>
+<p>I hope this post helps to solve this issue. In case of any problems, please let me know in below comment section.</p>
+<p>Thank you&#8230;</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://shreyasjejurkar.github.io/testwebsite/how-to-make-visual-studio-to-start-asp-net-core-debugging-in-same-browser-window/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

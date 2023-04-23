@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>sql server 2014 &#8211; Shreyas Jejurkar Blog</title>
+	<atom:link href="https://shreyasjejurkar.github.io/testwebsite/tag/sql-server-2014/feed/" rel="self" type="application/rss+xml" />
+	<link>https://shreyasjejurkar.github.io/testwebsite/</link>
+	<description></description>
+	<lastBuildDate>Fri, 16 Apr 2021 11:38:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.2</generator>
+	<item>
+		<title>How to fix &#8211; Could not found one or more components. please reinstall the application error.</title>
+		<link>https://shreyasjejurkar.github.io/testwebsite/2021/04/16/how-to-fix-could-not-found-one-or-more-components-please-reinstall-the-application-error/</link>
+		
+		<dc:creator><![CDATA[ShreyasJejurkar]]></dc:creator>
+		<pubDate>Fri, 16 Apr 2021 11:38:12 +0000</pubDate>
+				<category><![CDATA[Programming]]></category>
+		<category><![CDATA[Windows]]></category>
+		<category><![CDATA[sql server 2014]]></category>
+		<category><![CDATA[Visual Studio 2010]]></category>
+		<guid isPermaLink="false">https://mccshreyas.wordpress.com/?p=595</guid>
+
+					<description><![CDATA[Recently I was working on one of the projects where I was using SQL Server 2014 as a database and Visual Studio 2019. And suddenly I started getting the above error when I tried to open SQL Server 2014. I tried repairing the installation of SQL Server 2014 via the installer, but it did not [&#8230;]]]></description>
+										<content:encoded><![CDATA[
+<p>Recently I was working on one of the projects where I was using SQL Server 2014 as a database and Visual Studio 2019. And suddenly I started getting the above error when I tried to open SQL Server 2014. I tried repairing the installation of SQL Server 2014 via the installer, but it did not work, and I was getting the same error as before.&nbsp;</p>
+
+
+
+<p>So I got into thinking, like what I did before I was getting this error, then I realized that I have deleted the &#8220;Visual Studio 2010&#8221; folder from my Program Files (x86) folder. Because I was not using Visual Studio 2010, I was using the 2019 edition so technically, I don&#8217;t need that folder and its corresponding files to work, so to get some free space I deleted those folders and this is where I made the mistake.&nbsp;</p>
+
+
+
+<p>So after some research, I found that Visual Studio 2014 behind the scenes uses Visual Studio 2010 UI components for its rendering and its controls. That&#8217;s why if you compare the &#8220;Solution Explorer&#8221; UI from Visual Studio 2010, then it looks somewhat similar to &#8220;Object Explorer&#8221; in SQL Server 2014. Because they are the same under the hood and only the content is different.</p>
+
+
+
+<p>So does that mean to work with SQL Server 2014 I need to install Visual Studio 2010 although if I am not using it !? No, the UI (&#8220;UI Shell&#8221;) is a separate component from Visual Studio and SQL Server. As part of their installation, they install this component. And interestingly as it packs separately from these products so we can separately download that as well and install it. The component name is&nbsp;<strong>Visual Studio Isolated Shell</strong>.&nbsp;</p>
+
+
+
+<p>You can download the shell from the below link.&nbsp;</p>
+
+
+
+<p><a href="https://visualstudio.microsoft.com/vs/older-downloads/isolated-shell/" target="_blank" rel="noreferrer noopener">https://visualstudio.microsoft.com/vs/older-downloads/isolated-shell/</a></p>
+
+
+
+<p>But on that page when you accept a license, you will see a different version of that shell ranging from Visual Studio 2010 to 2015. So this is where we need to make the decision, and the following list might help to make that.&nbsp;</p>
+
+
+
+<p>1. SQL Server 2014 -&gt; Visual Studio 2010 isolated shell.&nbsp;<br>2. SQL Server 2016 -&gt; Visual Studio 2015 isolated shell.&nbsp;</p>
+
+
+
+<p>So make sure to install the correct shell, and give it a try to open SQL Server. In my case, it worked, but in your case, if it didn&#8217;t, then after installation of shell, repair the SQL Server installation and try again that will really help and will eventually solve your problem.&nbsp;<br><br>Thanks for reading..!</p>
+
+
+
+<p> </p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>dotnet &#8211; firsttest</title>
+	<atom:link href="https://shreyasjejurkar.github.io/testwebsite/tag/dotnet/feed/" rel="self" type="application/rss+xml" />
+	<link>https://shreyasjejurkar.github.io/testwebsite/</link>
+	<description></description>
+	<lastBuildDate>Thu, 07 Apr 2022 09:20:02 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.2</generator>
+	<item>
+		<title>List of Podcasts channels for .NET C# developers</title>
+		<link>https://shreyasjejurkar.github.io/testwebsite/list-of-podcasts-channels-for-net-csharp-developers/</link>
+					<comments>https://shreyasjejurkar.github.io/testwebsite/list-of-podcasts-channels-for-net-csharp-developers/#respond</comments>
+		
+		<dc:creator><![CDATA[ShreyasJejurkar]]></dc:creator>
+		<pubDate>Thu, 07 Apr 2022 09:20:02 +0000</pubDate>
+				<category><![CDATA[Programming]]></category>
+		<category><![CDATA[.NET]]></category>
+		<category><![CDATA[dotnet]]></category>
+		<guid isPermaLink="false">https://mccshreyas.com/?p=741</guid>
+
+					<description><![CDATA[Just like I have aggregated YouTube channels for .NET developers, with this post I will be sharing the list of podcasts channel that you can consider listening to in order to keep up to date with .NET and related stuff. Because taking screen time off is important but learning and curiosity should not be stopped. The [&#8230;]]]></description>
+										<content:encoded><![CDATA[
+<p>Just like I have aggregated <a href="https://shreyasjejurkar.com/2022/01/24/list-of-youtube-channels-for-net-csharp-developers/" target="_blank" rel="noreferrer noopener">YouTube channels for .NET developers</a>, with this post I will be sharing the list of podcasts channel that you can consider listening to in order to keep up to date with .NET and related stuff. Because taking screen time off is important but learning and curiosity should not be stopped.</p>
+
+
+
+<ol><li><a target="_blank" href="https://open.spotify.com/show/2DgUE1Iyl9cZxzzvUUIPBK?si=070d53e9036f4bf6" rel="noreferrer noopener">The Unhandled Exception Podcast</a></li><li><a target="_blank" href="https://open.spotify.com/show/0Zbp6m8y06n2zlPPs59DEX?si=3202e41319b04e5e" rel="noreferrer noopener">Adventures in .NET</a></li><li><a target="_blank" href="https://open.spotify.com/show/6FIM18ZIqQvuX7d1TA9rbZ?si=13007e795b9e4e09" rel="noreferrer noopener">The .NET Core Podcast</a></li><li><a target="_blank" href="https://open.spotify.com/show/6X2km5VppEVYIdVjExWlgt?si=03501505ed9446a5" rel="noreferrer noopener">Null Pointers</a></li><li><a target="_blank" href="https://open.spotify.com/show/6griBeHq63dVJ1xHv52tQe?si=9ee47ac002444612" rel="noreferrer noopener">no dogma podcast</a></li><li><a target="_blank" href="https://open.spotify.com/show/0nLT0qByLhR8L6cR5rDZcV?si=b77223fdee9f465f" rel="noreferrer noopener">DevTalk with Kerry W. Lothrop</a></li><li><a target="_blank" href="https://open.spotify.com/show/5tz9eGgXtNHmq3WVD3EwYx?si=20d6af153d614b38" rel="noreferrer noopener">.NET Rocks!</a></li><li><a target="_blank" href="https://open.spotify.com/show/1GXN20wpTG0yWGc6PSKz3f?si=ec6670174e514541" rel="noreferrer noopener">The Productive C# Podcas</a>t</li></ol>
+
+
+
+<p>As you can see the list is not as huge as YouTube channels, but make sure you give it a try to listen to them. Let me know in the comment section below if I miss any channel to add.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://shreyasjejurkar.github.io/testwebsite/list-of-podcasts-channels-for-net-csharp-developers/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>List of YouTube channels for .NET C# developers</title>
+		<link>https://shreyasjejurkar.github.io/testwebsite/list-of-youtube-channels-for-net-csharp-developers/</link>
+					<comments>https://shreyasjejurkar.github.io/testwebsite/list-of-youtube-channels-for-net-csharp-developers/#respond</comments>
+		
+		<dc:creator><![CDATA[ShreyasJejurkar]]></dc:creator>
+		<pubDate>Mon, 24 Jan 2022 07:29:16 +0000</pubDate>
+				<category><![CDATA[Programming]]></category>
+		<category><![CDATA[.NET]]></category>
+		<category><![CDATA[dotnet]]></category>
+		<category><![CDATA[youtube]]></category>
+		<guid isPermaLink="false">https://mccshreyas.com/?p=720</guid>
+
+					<description><![CDATA[Following is the list of youtube channels that I have aggregated for .NET C# (Csharp) developers. I personally follow them every day and subscribed. Please note that this does not represent any kind of ranking. I would suggest going through them one by one looking at their content and playlist section and if you are [&#8230;]]]></description>
+										<content:encoded><![CDATA[
+<p>Following is the list of youtube channels that I have aggregated for .NET C# (Csharp) developers. I  personally follow them every day and subscribed. Please note that this does not represent any kind of ranking. </p>
+
+
+
+<p>I would suggest going through them one by one looking at their content and playlist section and if you are interested give them a sub! Along the time, I will keep this list updated, if I missed someone, please let me know in the comment section below! </p>
+
+
+
+<ol><li><a rel="noreferrer noopener" href="https://www.youtube.com/c/dotNET" target="_blank">Official .NET channel </a></li><li><a rel="noreferrer noopener" href="https://www.youtube.com/c/NETFoundation" target="_blank">.NET Foundation</a></li><li><a rel="noreferrer noopener" href="https://www.youtube.com/c/RawCoding" target="_blank">Raw Coding</a></li><li><a rel="noreferrer noopener" href="https://www.youtube.com/c/Elfocrash" target="_blank">Nick Chapsa</a></li><li><a rel="noreferrer noopener" href="https://www.youtube.com/user/IAmTimCorey" target="_blank">Tim Corey</a></li><li><a rel="noreferrer noopener" href="https://www.youtube.com/channel/UCRs-PO48PbbS0l7bBhbu5CA" target="_blank">Ak Academy</a></li><li><a rel="noreferrer noopener" href="https://www.youtube.com/c/shanselman" target="_blank">Scott Hanselman</a></li><li><a rel="noreferrer noopener" href="https://www.youtube.com/c/AngelSix" target="_blank">AngelSix</a></li><li><a rel="noreferrer noopener" href="https://www.youtube.com/c/BrianLagunas" target="_blank">Brian Lagunas</a></li><li><a rel="noreferrer noopener" href="https://www.youtube.com/c/Codewrinkles" target="_blank">Codewrinkles</a></li><li><a rel="noreferrer noopener" href="https://www.youtube.com/c/PhatBoyG" target="_blank">Chris Patterson</a></li><li><a rel="noreferrer noopener" href="https://www.youtube.com/c/CodingMilitia" target="_blank">Coding Militia</a></li><li><a rel="noreferrer noopener" href="https://www.youtube.com/c/CuriousDrive" target="_blank">Curious Drive</a></li><li><a rel="noreferrer noopener" href="https://www.youtube.com/c/DevMentors" target="_blank">DevMentors</a></li><li><a rel="noreferrer noopener" href="https://www.youtube.com/c/DmitriNesteruk" target="_blank">Dmitri Nesteruk</a></li><li><a rel="noreferrer noopener" href="https://www.youtube.com/c/DotNetCoreCentral" target="_blank">DotNet Core Central</a></li><li><a rel="noreferrer noopener" href="https://www.youtube.com/c/FrankLiuSoftware" target="_blank">Frank Liu</a></li><li><a rel="noreferrer noopener" href="https://www.youtube.com/c/GavinLon" target="_blank">Gavin Lon</a></li><li><a rel="noreferrer noopener" href="https://www.youtube.com/c/HassanHabib" target="_blank">Hassan Habib</a></li><li><a rel="noreferrer noopener" href="https://www.youtube.com/c/csharpfritz" target="_blank">Jeffery T. Fritz</a></li><li><a rel="noreferrer noopener" href="https://www.youtube.com/c/binarythistle" target="_blank">Les Jackson</a></li><li><a rel="noreferrer noopener" href="https://www.youtube.com/c/RahulNath" target="_blank">Rahul Nath</a></li><li><a rel="noreferrer noopener" href="https://www.youtube.com/channel/UC3RKA4vunFAfrfxiJhPEplw" target="_blank">CodeOpinion</a></li><li><a rel="noreferrer noopener" href="https://www.youtube.com/c/Dotnet-tricks" target="_blank">Dot Net Tricks</a></li><li><a rel="noreferrer noopener" href="https://www.youtube.com/c/Dotnetos" target="_blank">Dotnetos</a></li><li><a rel="noreferrer noopener" href="https://www.youtube.com/c/JamesMontemagno" target="_blank">James Montemagno</a></li><li><a rel="noreferrer noopener" href="https://www.youtube.com/c/NTFAQGuy" target="_blank">John Savill&#8217;s Technical Training</a></li><li><a rel="noreferrer noopener" href="https://www.youtube.com/c/Csharp-video-tutorialsBlogspot" target="_blank">kudvenkat </a></li><li><a rel="noreferrer noopener" href="https://www.youtube.com/c/visualstudio" target="_blank">Microsoft Visual Studio</a></li><li><a rel="noreferrer noopener" href="https://www.youtube.com/c/NDCConferences" target="_blank">NDC Conferences</a></li><li><a rel="noreferrer noopener" href="https://www.youtube.com/c/XamarinDevelopers" target="_blank">Xamarin Developers</a></li><li><a rel="noreferrer noopener" href="https://www.youtube.com/c/Ardalis" target="_blank">Ardalis</a></li><li><a rel="noreferrer noopener" href="https://www.youtube.com/GeraldVersluis" target="_blank">Gerald Versluis</a></li><li><a rel="noreferrer noopener" href="https://www.youtube.com/c/AndreaAngella" target="_blank">Andrea Angella</a></li><li><a rel="noreferrer noopener" href="https://www.youtube.com/c/WesDoyle" target="_blank">Wes Doyle</a></li><li><a rel="noreferrer noopener" href="https://www.youtube.com/channel/UC5P4o4uvwae7r3_xvaKTutA" target="_blank">Peter</a></li><li><a href="https://www.youtube.com/c/RainerStropek11" target="_blank" rel="noreferrer noopener">Rainer Stropek</a></li></ol>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://shreyasjejurkar.github.io/testwebsite/list-of-youtube-channels-for-net-csharp-developers/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Log Entity Framework Core generated SQL in ASP.NET Core</title>
+		<link>https://shreyasjejurkar.github.io/testwebsite/log-entity-framework-core-generated-sql-in-asp-net-core/</link>
+					<comments>https://shreyasjejurkar.github.io/testwebsite/log-entity-framework-core-generated-sql-in-asp-net-core/#respond</comments>
+		
+		<dc:creator><![CDATA[ShreyasJejurkar]]></dc:creator>
+		<pubDate>Sun, 15 Nov 2020 14:03:20 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[.NET]]></category>
+		<category><![CDATA[dotnet]]></category>
+		<category><![CDATA[entity framework]]></category>
+		<category><![CDATA[SQL]]></category>
+		<guid isPermaLink="false">https://mccshreyas.wordpress.com/?p=560</guid>
+
+					<description><![CDATA[If you&#8217;re a .NET developer, then you are most probably familiar with Entity Framework data access technology that Microsoft provides for developers.But still, if you are not familiar then let me explain to you.Entity Framework is an Object (Relational) Mapper for database objects, meaning it lets you query database records using LINQ (Language-integrated query) and [&#8230;]]]></description>
+										<content:encoded><![CDATA[
+<p class="has-text-align-justify">If you&#8217;re a .NET developer, then you are most probably familiar with Entity Framework data access technology that Microsoft provides for developers.<br>But still, if you are not familiar then let me explain to you.<br>Entity Framework is an Object (Relational) Mapper for database objects, meaning it lets you query database records using LINQ (Language-integrated query) and under the hood, it generates the resulting query based on your LINQ expression and executes it on the database, and if there are resulting records from SQL query then those records EF maps to your C# class objects, so that you don&#8217;t have to do that heavy lifting for mapping database values to C# objects and vice versa.</p>
+
+
+
+<p class="has-text-align-justify">So the main point here is to understand that EF generates SQL query based on LINQ expression that the user has written. So while developing an ASP.NET Core Web application (Or any .NET application) or debugging a bug, you might need to see a generated query for your LINQ operation, and most probably you might want to log in to console so that based on it you can decide do you want to write a raw SQL query for given complex operation or wanna use EF generated query.<br>So by default when you add the EF Core package to the application, it does not log the query to the console, we have to tell EF core explicitly to log the generated query to the console (or might be somewhere else).<br>So in today&#8217;s post how we will see how we can do that. There are generally two ways to do so. But let&#8217;s proceed with a simple one.</p>
+
+
+
+<p><strong>1<sup>st</sup> way</strong>:<br>This is the simplest way to start logging your generated query.<br>In your <code>DbContext</code> class, you need to override the <code>OnConfiguring</code> method and need to add the following line to <code>optionsBuilder</code>. As we can see the <code>LogTo</code> (added in .NET 5) method takes <code>Action&lt;string&gt;</code> as a parameter. For simplicity, I am logging queries to Console but you can log it anywhere and second parameter we have to pass the <code>LogLevel</code>. By adding this, the EF core will start logging generated SQL to Console. </p>
+
+
+
+<pre class="wp-block-syntaxhighlighter-code"> protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            optionsBuilder
+                .EnableSensitiveDataLogging()
+                .LogTo(Console.WriteLine, LogLevel.Information);
+
+            base.OnConfiguring(optionsBuilder);
+        }</pre>
+
+
+
+<p><strong>2<sup>nd</sup> way</strong>:<br>This way is quite simple and configurable as well. In the previous method as we see we need to modify the actual C# code to tell EF to start logging generated SQL but in this way, we just need to add an entry in the Logging section under appsettings.json file.</p>
+
+
+
+<pre class="wp-block-syntaxhighlighter-code"> "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft": "Warning",
+      "Microsoft.Hosting.Lifetime": "Information",
+      "Microsoft.EntityFrameworkCore.Database.Command": "Information"
+    }
+  },</pre>
+
+
+
+<p>After adding the above entry, the Logger abstraction will read this configuration at startup and will start logging EF generated SQL.<br>One of the advantages of this is like, in production scenarios if we don&#8217;t want to log the generated SQL to console, so in that, we just need to remove or comment out this entry in JSON file, by doing so the EF will no longer log the generated SQL and this does not require the application restart, as the configuration will automatically get reloaded.</p>
+
+
+
+<p>By following any of the steps mentioned above, you will see generated SQL to logs. If you face any problem while doing so, please let me ping in comment section below. </p>
+
+
+
+<p>Thanks for reading! </p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://shreyasjejurkar.github.io/testwebsite/log-entity-framework-core-generated-sql-in-asp-net-core/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>
