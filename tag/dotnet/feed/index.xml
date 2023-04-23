@@ -8,7 +8,7 @@
 	>
 
 <channel>
-	<title>dotnet &#8211; firsttest</title>
+	<title>dotnet &#8211; Shreyas Jejurkar Blog</title>
 	<atom:link href="https://shreyasjejurkar.github.io/testwebsite/tag/dotnet/feed/" rel="self" type="application/rss+xml" />
 	<link>https://shreyasjejurkar.github.io/testwebsite/</link>
 	<description></description>
@@ -21,8 +21,7 @@
 	<generator>https://wordpress.org/?v=6.2</generator>
 	<item>
 		<title>List of Podcasts channels for .NET C# developers</title>
-		<link>https://shreyasjejurkar.github.io/testwebsite/list-of-podcasts-channels-for-net-csharp-developers/</link>
-					<comments>https://shreyasjejurkar.github.io/testwebsite/list-of-podcasts-channels-for-net-csharp-developers/#respond</comments>
+		<link>https://shreyasjejurkar.github.io/testwebsite/2022/04/07/list-of-podcasts-channels-for-net-csharp-developers/</link>
 		
 		<dc:creator><![CDATA[ShreyasJejurkar]]></dc:creator>
 		<pubDate>Thu, 07 Apr 2022 09:20:02 +0000</pubDate>
@@ -44,15 +43,12 @@
 <p>As you can see the list is not as huge as YouTube channels, but make sure you give it a try to listen to them. Let me know in the comment section below if I miss any channel to add.</p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>https://shreyasjejurkar.github.io/testwebsite/list-of-podcasts-channels-for-net-csharp-developers/feed/</wfw:commentRss>
-			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>List of YouTube channels for .NET C# developers</title>
-		<link>https://shreyasjejurkar.github.io/testwebsite/list-of-youtube-channels-for-net-csharp-developers/</link>
-					<comments>https://shreyasjejurkar.github.io/testwebsite/list-of-youtube-channels-for-net-csharp-developers/#respond</comments>
+		<link>https://shreyasjejurkar.github.io/testwebsite/2022/01/24/list-of-youtube-channels-for-net-csharp-developers/</link>
 		
 		<dc:creator><![CDATA[ShreyasJejurkar]]></dc:creator>
 		<pubDate>Mon, 24 Jan 2022 07:29:16 +0000</pubDate>
@@ -75,15 +71,12 @@
 <ol><li><a rel="noreferrer noopener" href="https://www.youtube.com/c/dotNET" target="_blank">Official .NET channel </a></li><li><a rel="noreferrer noopener" href="https://www.youtube.com/c/NETFoundation" target="_blank">.NET Foundation</a></li><li><a rel="noreferrer noopener" href="https://www.youtube.com/c/RawCoding" target="_blank">Raw Coding</a></li><li><a rel="noreferrer noopener" href="https://www.youtube.com/c/Elfocrash" target="_blank">Nick Chapsa</a></li><li><a rel="noreferrer noopener" href="https://www.youtube.com/user/IAmTimCorey" target="_blank">Tim Corey</a></li><li><a rel="noreferrer noopener" href="https://www.youtube.com/channel/UCRs-PO48PbbS0l7bBhbu5CA" target="_blank">Ak Academy</a></li><li><a rel="noreferrer noopener" href="https://www.youtube.com/c/shanselman" target="_blank">Scott Hanselman</a></li><li><a rel="noreferrer noopener" href="https://www.youtube.com/c/AngelSix" target="_blank">AngelSix</a></li><li><a rel="noreferrer noopener" href="https://www.youtube.com/c/BrianLagunas" target="_blank">Brian Lagunas</a></li><li><a rel="noreferrer noopener" href="https://www.youtube.com/c/Codewrinkles" target="_blank">Codewrinkles</a></li><li><a rel="noreferrer noopener" href="https://www.youtube.com/c/PhatBoyG" target="_blank">Chris Patterson</a></li><li><a rel="noreferrer noopener" href="https://www.youtube.com/c/CodingMilitia" target="_blank">Coding Militia</a></li><li><a rel="noreferrer noopener" href="https://www.youtube.com/c/CuriousDrive" target="_blank">Curious Drive</a></li><li><a rel="noreferrer noopener" href="https://www.youtube.com/c/DevMentors" target="_blank">DevMentors</a></li><li><a rel="noreferrer noopener" href="https://www.youtube.com/c/DmitriNesteruk" target="_blank">Dmitri Nesteruk</a></li><li><a rel="noreferrer noopener" href="https://www.youtube.com/c/DotNetCoreCentral" target="_blank">DotNet Core Central</a></li><li><a rel="noreferrer noopener" href="https://www.youtube.com/c/FrankLiuSoftware" target="_blank">Frank Liu</a></li><li><a rel="noreferrer noopener" href="https://www.youtube.com/c/GavinLon" target="_blank">Gavin Lon</a></li><li><a rel="noreferrer noopener" href="https://www.youtube.com/c/HassanHabib" target="_blank">Hassan Habib</a></li><li><a rel="noreferrer noopener" href="https://www.youtube.com/c/csharpfritz" target="_blank">Jeffery T. Fritz</a></li><li><a rel="noreferrer noopener" href="https://www.youtube.com/c/binarythistle" target="_blank">Les Jackson</a></li><li><a rel="noreferrer noopener" href="https://www.youtube.com/c/RahulNath" target="_blank">Rahul Nath</a></li><li><a rel="noreferrer noopener" href="https://www.youtube.com/channel/UC3RKA4vunFAfrfxiJhPEplw" target="_blank">CodeOpinion</a></li><li><a rel="noreferrer noopener" href="https://www.youtube.com/c/Dotnet-tricks" target="_blank">Dot Net Tricks</a></li><li><a rel="noreferrer noopener" href="https://www.youtube.com/c/Dotnetos" target="_blank">Dotnetos</a></li><li><a rel="noreferrer noopener" href="https://www.youtube.com/c/JamesMontemagno" target="_blank">James Montemagno</a></li><li><a rel="noreferrer noopener" href="https://www.youtube.com/c/NTFAQGuy" target="_blank">John Savill&#8217;s Technical Training</a></li><li><a rel="noreferrer noopener" href="https://www.youtube.com/c/Csharp-video-tutorialsBlogspot" target="_blank">kudvenkat </a></li><li><a rel="noreferrer noopener" href="https://www.youtube.com/c/visualstudio" target="_blank">Microsoft Visual Studio</a></li><li><a rel="noreferrer noopener" href="https://www.youtube.com/c/NDCConferences" target="_blank">NDC Conferences</a></li><li><a rel="noreferrer noopener" href="https://www.youtube.com/c/XamarinDevelopers" target="_blank">Xamarin Developers</a></li><li><a rel="noreferrer noopener" href="https://www.youtube.com/c/Ardalis" target="_blank">Ardalis</a></li><li><a rel="noreferrer noopener" href="https://www.youtube.com/GeraldVersluis" target="_blank">Gerald Versluis</a></li><li><a rel="noreferrer noopener" href="https://www.youtube.com/c/AndreaAngella" target="_blank">Andrea Angella</a></li><li><a rel="noreferrer noopener" href="https://www.youtube.com/c/WesDoyle" target="_blank">Wes Doyle</a></li><li><a rel="noreferrer noopener" href="https://www.youtube.com/channel/UC5P4o4uvwae7r3_xvaKTutA" target="_blank">Peter</a></li><li><a href="https://www.youtube.com/c/RainerStropek11" target="_blank" rel="noreferrer noopener">Rainer Stropek</a></li></ol>
 ]]></content:encoded>
 					
-					<wfw:commentRss>https://shreyasjejurkar.github.io/testwebsite/list-of-youtube-channels-for-net-csharp-developers/feed/</wfw:commentRss>
-			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>Log Entity Framework Core generated SQL in ASP.NET Core</title>
-		<link>https://shreyasjejurkar.github.io/testwebsite/log-entity-framework-core-generated-sql-in-asp-net-core/</link>
-					<comments>https://shreyasjejurkar.github.io/testwebsite/log-entity-framework-core-generated-sql-in-asp-net-core/#respond</comments>
+		<link>https://shreyasjejurkar.github.io/testwebsite/2020/11/15/log-entity-framework-core-generated-sql-in-asp-net-core/</link>
 		
 		<dc:creator><![CDATA[ShreyasJejurkar]]></dc:creator>
 		<pubDate>Sun, 15 Nov 2020 14:03:20 +0000</pubDate>
@@ -145,8 +138,6 @@
 <p>Thanks for reading! </p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>https://shreyasjejurkar.github.io/testwebsite/log-entity-framework-core-generated-sql-in-asp-net-core/feed/</wfw:commentRss>
-			<slash:comments>0</slash:comments>
 		
 		
 			</item>

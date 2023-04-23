@@ -1,0 +1,567 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Programming &#8211; Shreyas Jejurkar Blog</title>
+	<atom:link href="https://shreyasjejurkar.github.io/testwebsite/category/programming/feed/" rel="self" type="application/rss+xml" />
+	<link>https://shreyasjejurkar.github.io/testwebsite/</link>
+	<description></description>
+	<lastBuildDate>Thu, 29 Dec 2022 15:26:16 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.2</generator>
+	<item>
+		<title>How to set the memory limit for docker container</title>
+		<link>https://shreyasjejurkar.github.io/testwebsite/2022/12/29/how-to-set-the-memory-limit-for-docker-container/</link>
+		
+		<dc:creator><![CDATA[ShreyasJejurkar]]></dc:creator>
+		<pubDate>Thu, 29 Dec 2022 15:26:16 +0000</pubDate>
+				<category><![CDATA[Programming]]></category>
+		<guid isPermaLink="false">https://shreyasjejurkar.com/?p=898</guid>
+
+					<description><![CDATA[Docker is a popular tool for packaging and deploying applications in containers, which are lightweight and portable execution environments. One of the key benefits of using Docker is the ability to limit the resources that a container can use, such as CPU and memory. This can be useful for optimizing the performance of your containers [&#8230;]]]></description>
+										<content:encoded><![CDATA[
+<p>Docker is a popular tool for packaging and deploying applications in containers, which are lightweight and portable execution environments. One of the key benefits of using Docker is the ability to limit the resources that a container can use, such as CPU and memory. This can be useful for optimizing the performance of your containers and ensuring that they do not consume too many resources on the host machine.</p>
+
+
+
+<p>To set a memory limit when running a Docker container, you can use the <code>--memory</code> flag followed by the amount of memory you want to allocate to the container. For example, to allocate 256MB of memory to a container, you would run the following command:<br><br><code>docker run --memory 256m &lt;image&gt; &lt;command&gt;</code><br><br>You can also specify the memory limit in bytes using the <code>--memory-swap</code> flag, which sets the total amount of memory (RAM and swap) that the container can use. For example, to allocate 256MB of memory and an additional 256MB of swap space to a container, you would run the following command:<br><br><code>docker run --memory 256m --memory-swap 512m &lt;image&gt; &lt;command&gt;</code><br><br></p>
+
+
+
+<p>Keep in mind that setting a memory limit for a container does not guarantee that the container will be able to use all of the allocated memory. If the host machine does not have enough available memory, the container may not be able to use all of the allocated memory.</p>
+
+
+
+<p>It is also important to note that setting a memory limit for a container can affect its performance, as the container may not be able to use all of the available memory on the host machine. Therefore, it is important to choose an appropriate memory limit based on the needs of the container and the resources available on the host machine.</p>
+
+
+
+<p>Overall, setting a memory limit for a Docker container is a useful way to optimize the performance of your containers and ensure that they do not consume too many resources on the host machine. By carefully managing the resources available to your containers, you can ensure that they run smoothly and efficiently.</p>
+
+
+
+<p><br></p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Create a keyboard shortcut for pulling changes in git in Visual Studio Code</title>
+		<link>https://shreyasjejurkar.github.io/testwebsite/2022/12/29/create-a-keyboard-shortcut-for-pulling-changes-in-git-in-visual-studio-code/</link>
+		
+		<dc:creator><![CDATA[ShreyasJejurkar]]></dc:creator>
+		<pubDate>Thu, 29 Dec 2022 14:48:41 +0000</pubDate>
+				<category><![CDATA[Programming]]></category>
+		<guid isPermaLink="false">https://shreyasjejurkar.com/?p=873</guid>
+
+					<description><![CDATA[If you are a web developer or a software engineer, it’s most likely you are using Visual Studio code as your code editor. Yeah, it&#8217;s fantastic and easy to use. But I wondered when I found that there is no default shortcut key for most used options in git workflow, which pulls changes from upstream. [&#8230;]]]></description>
+										<content:encoded><![CDATA[
+<p>If you are a web developer or a software engineer, it’s most likely you are using Visual Studio code as your code editor. Yeah, it&#8217;s fantastic and easy to use. But I wondered when I found that there is no default shortcut key for most used options in git workflow, which pulls changes from upstream. So I decided to have a shortcut for pulling changes from upstream for both the current branches and different branches and also I though I should write a blog post around this just to let people know how to do that. So, let’s get started….</p>
+
+
+
+<p>Steps</p>
+
+
+
+<ol type="1">
+<li>Open Visual Studio Code and go to File à Preference à Keyboard shortcuts alternatively you can press CTRL + K S to open it.<br><img decoding="async" width="920" height="909" class="wp-image-881" style="width: 500px;" src="https://shreyasjejurkar.com/wp-content/uploads/2022/12/KeyboardShortcut-1.png" alt="" srcset="https://shreyasjejurkar.github.io/testwebsite/wp-content/uploads/2022/12/KeyboardShortcut-1.png 920w, https://shreyasjejurkar.github.io/testwebsite/wp-content/uploads/2022/12/KeyboardShortcut-1-300x296.png 300w, https://shreyasjejurkar.github.io/testwebsite/wp-content/uploads/2022/12/KeyboardShortcut-1-768x759.png 768w" sizes="(max-width: 920px) 100vw, 920px" /></li>
+
+
+
+<li>Once you open it, you will see a lot of options there. Basically, these are the various operations for which you can assign a keyboard shortcut. So instead of getting lost in all options, at the top, you will see a search bar where you can search for a particular action in our case we will type “git pull” (without quotes)<br><br><img decoding="async" width="603" height="229" class="wp-image-885" style="width: 400px;" src="https://shreyasjejurkar.com/wp-content/uploads/2022/12/SearchGitPull-1.png" alt="search git pull option " srcset="https://shreyasjejurkar.github.io/testwebsite/wp-content/uploads/2022/12/SearchGitPull-1.png 603w, https://shreyasjejurkar.github.io/testwebsite/wp-content/uploads/2022/12/SearchGitPull-1-300x114.png 300w" sizes="(max-width: 603px) 100vw, 603px" /></li>
+
+
+
+<li>Once you search that you will see the first 2 entries of “git pull” and “git pull from”. And next to it you will see an empty cell under the Key Bindings column. You can double-click on that and press the key that you want to assign for that particular operation. In my case I will assign git pull to “ALT + E” and git pull from to “CTRL + ALT + E” as you can see below.<br><br><img decoding="async" width="603" height="77" class="wp-image-887" style="width: 600px;" src="https://shreyasjejurkar.com/wp-content/uploads/2022/12/ShortcutAssignment-1.png" alt="shortcut assignment" srcset="https://shreyasjejurkar.github.io/testwebsite/wp-content/uploads/2022/12/ShortcutAssignment-1.png 603w, https://shreyasjejurkar.github.io/testwebsite/wp-content/uploads/2022/12/ShortcutAssignment-1-300x38.png 300w" sizes="(max-width: 603px) 100vw, 603px" /><br><br><br>So, this is all that we have to do. Now next time when you want to pull changes, instead of going the usual way, on the keyboard you can just press the shortcut key whatever you assign in the previous step.<br>I know this isn’t rocket science, but still, it saves some seconds and feels great and productive!<br>In case you face any issues while performing the above steps, please let me know in the comment section below.<br><br><br><br><br>Thanks! </li>
+</ol>
+
+
+<p><!-- /wp:list --></p>]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>How to &#8211; Hide Prefetch request from Network Tab in Chrome DevTools</title>
+		<link>https://shreyasjejurkar.github.io/testwebsite/2022/09/17/how-to-hide-prefetch-request-from-network-tab-in-chrome-devtools/</link>
+		
+		<dc:creator><![CDATA[ShreyasJejurkar]]></dc:creator>
+		<pubDate>Sat, 17 Sep 2022 06:20:46 +0000</pubDate>
+				<category><![CDATA[Programming]]></category>
+		<category><![CDATA[chrome]]></category>
+		<category><![CDATA[developer]]></category>
+		<category><![CDATA[devtools]]></category>
+		<guid isPermaLink="false">https://shreyasjejurkar.com/?p=862</guid>
+
+					<description><![CDATA[If you are a Web developer and working on a Full Stack application, you might have notice that the browser ( in my case Chrome) does send prefetch requests to your API endpoints before the actual API calls. This is actually useful to improve performance but this can be very confusing when you are debugging [&#8230;]]]></description>
+										<content:encoded><![CDATA[
+<p>If you are a Web developer and working on a Full Stack application, you might have notice that the browser ( in my case Chrome) does send prefetch requests to your API endpoints before the actual API calls.</p>
+
+
+
+<p>This is actually useful to improve performance but this can be very confusing when you are debugging applications from the front-end to the back-end and monitoring API calls in the network tab. Prefetch requests just clutter the network tab and we miss our actual XHR request to see what is happening. </p>
+
+
+
+<p>So in this post, I will tell you the way through which you would be able to filter out prefetch requests from the network tab and can able to focus on actual XHR API calls. </p>
+
+
+
+<p class="has-medium-font-size"><strong>Steps </strong></p>
+
+
+
+<ol><li>Open Chrome developer tools by right-clicking on the page and clicking on inspecting or by pressing the shortcut CTRL + SHIFT + I. </li><li>Navigate to the Network tab (4th one most likely). </li><li>And in the filter textbox type <code>-method:OPTIONS</code>.We add a filter for HTTP OPTIONS method because prefetch calls use HTTP OPTIONS. <br><br></li></ol>
+
+
+
+<figure class="wp-block-image size-full is-resized"><img decoding="async" src="https://shreyasjejurkar.com/wp-content/uploads/2022/09/image.png" alt="prefetch filter" class="wp-image-865" width="297" height="188"/></figure>
+
+
+
+<p>Once you perform the above steps, all prefetch API calls will be filtered out and you will only see XHR calls. </p>
+
+
+
+<p></p>
+
+
+
+<p></p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>How to make Visual Studio to start ASP.NET Core debugging in same browser window</title>
+		<link>https://shreyasjejurkar.github.io/testwebsite/2022/06/30/how-to-make-visual-studio-to-start-asp-net-core-debugging-in-same-browser-window/</link>
+		
+		<dc:creator><![CDATA[ShreyasJejurkar]]></dc:creator>
+		<pubDate>Thu, 30 Jun 2022 15:14:26 +0000</pubDate>
+				<category><![CDATA[Programming]]></category>
+		<category><![CDATA[aspnetcore]]></category>
+		<category><![CDATA[visualstudio C#]]></category>
+		<guid isPermaLink="false">https://shreyasjejurkar.com/?p=853</guid>
+
+					<description><![CDATA[If you are working with ASP.NET or ASP.NET Core projects in Visual Studio for developing web applications, then you might have come across this wired issue in Visual Studio. The issue is whenever you start a debugging session (F5) inside Visual Studio for web projects, it always opens a new browser window (maybe chrome/edge based [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>If you are working with ASP.NET or ASP.NET Core projects in Visual Studio for developing web applications, then you might have come across this wired issue in Visual Studio.</p>
+<p>The issue is whenever you start a debugging session (F5) inside Visual Studio for web projects, it always opens a new browser window (maybe chrome/edge based on your default preferences) for each debugging session. I don&#8217;t think that&#8217;s a good experience, because most of us developers have an already open browser window that actually opens most of the time to search for bug fixes or create PR to GitHub or Azure DevOps. So having 2 separate browser windows puts a lot of pressure on RAM. And also it&#8217;s not like the chrome opens faster each time, every time it takes some initial seconds to open and then load the actual project in it.</p>
+<p>So in this blog post, I will let you know the steps needed for avoiding a new window each time and making Visual Studio actually open in a new tab inside an already open browser window.</p>
+<p>Steps &#8211;</p>
+<ol>1. Open Visual Studio and navigate to Tools -&gt; Options.</ol>
+<p><img decoding="async" class="aligncenter size-full wp-image-857" src="https://shreyasjejurkar.com/wp-content/uploads/2022/06/vs-options.png" alt="tools-&gt;options settings vs" width="868" height="524" srcset="https://shreyasjejurkar.github.io/testwebsite/wp-content/uploads/2022/06/vs-options.png 868w, https://shreyasjejurkar.github.io/testwebsite/wp-content/uploads/2022/06/vs-options-300x181.png 300w, https://shreyasjejurkar.github.io/testwebsite/wp-content/uploads/2022/06/vs-options-768x464.png 768w" sizes="(max-width: 868px) 100vw, 868px" /></p>
+<ol>2. After that in the Projects and Solutions section go to Web projects. There check the checkbox which is highlighted below.</ol>
+<p><img decoding="async" class="aligncenter size-full wp-image-856" src="https://shreyasjejurkar.com/wp-content/uploads/2022/06/settings-1.png" alt="third checkbox tick" width="976" height="682" srcset="https://shreyasjejurkar.github.io/testwebsite/wp-content/uploads/2022/06/settings-1.png 976w, https://shreyasjejurkar.github.io/testwebsite/wp-content/uploads/2022/06/settings-1-300x210.png 300w, https://shreyasjejurkar.github.io/testwebsite/wp-content/uploads/2022/06/settings-1-768x537.png 768w" sizes="(max-width: 976px) 100vw, 976px" /></p>
+<ol>3. Then go to Debugging -&gt; General tab. And uncheck the checkbox which is highlighted below.</ol>
+<p><img decoding="async" class="aligncenter size-full wp-image-858" src="https://shreyasjejurkar.com/wp-content/uploads/2022/06/settings-2.png" alt="debugging general settings" width="1101" height="688" srcset="https://shreyasjejurkar.github.io/testwebsite/wp-content/uploads/2022/06/settings-2.png 1101w, https://shreyasjejurkar.github.io/testwebsite/wp-content/uploads/2022/06/settings-2-300x187.png 300w, https://shreyasjejurkar.github.io/testwebsite/wp-content/uploads/2022/06/settings-2-1024x640.png 1024w, https://shreyasjejurkar.github.io/testwebsite/wp-content/uploads/2022/06/settings-2-768x480.png 768w" sizes="(max-width: 1101px) 100vw, 1101px" /></p>
+<ol>4. And then lastly to save these changes, click on the Ok button on the window.</ol>
+<p>And that&#8217;s it. These two changes will make sure the Visual Studio will open the new debugging tab in the same browser window instead of opening new.</p>
+<p>I hope this post helps to solve this issue. In case of any problems, please let me know in below comment section.</p>
+<p>Thank you&#8230;</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>List of Podcasts channels for .NET C# developers</title>
+		<link>https://shreyasjejurkar.github.io/testwebsite/2022/04/07/list-of-podcasts-channels-for-net-csharp-developers/</link>
+		
+		<dc:creator><![CDATA[ShreyasJejurkar]]></dc:creator>
+		<pubDate>Thu, 07 Apr 2022 09:20:02 +0000</pubDate>
+				<category><![CDATA[Programming]]></category>
+		<category><![CDATA[.NET]]></category>
+		<category><![CDATA[dotnet]]></category>
+		<guid isPermaLink="false">https://mccshreyas.com/?p=741</guid>
+
+					<description><![CDATA[Just like I have aggregated YouTube channels for .NET developers, with this post I will be sharing the list of podcasts channel that you can consider listening to in order to keep up to date with .NET and related stuff. Because taking screen time off is important but learning and curiosity should not be stopped. The [&#8230;]]]></description>
+										<content:encoded><![CDATA[
+<p>Just like I have aggregated <a href="https://shreyasjejurkar.com/2022/01/24/list-of-youtube-channels-for-net-csharp-developers/" target="_blank" rel="noreferrer noopener">YouTube channels for .NET developers</a>, with this post I will be sharing the list of podcasts channel that you can consider listening to in order to keep up to date with .NET and related stuff. Because taking screen time off is important but learning and curiosity should not be stopped.</p>
+
+
+
+<ol><li><a target="_blank" href="https://open.spotify.com/show/2DgUE1Iyl9cZxzzvUUIPBK?si=070d53e9036f4bf6" rel="noreferrer noopener">The Unhandled Exception Podcast</a></li><li><a target="_blank" href="https://open.spotify.com/show/0Zbp6m8y06n2zlPPs59DEX?si=3202e41319b04e5e" rel="noreferrer noopener">Adventures in .NET</a></li><li><a target="_blank" href="https://open.spotify.com/show/6FIM18ZIqQvuX7d1TA9rbZ?si=13007e795b9e4e09" rel="noreferrer noopener">The .NET Core Podcast</a></li><li><a target="_blank" href="https://open.spotify.com/show/6X2km5VppEVYIdVjExWlgt?si=03501505ed9446a5" rel="noreferrer noopener">Null Pointers</a></li><li><a target="_blank" href="https://open.spotify.com/show/6griBeHq63dVJ1xHv52tQe?si=9ee47ac002444612" rel="noreferrer noopener">no dogma podcast</a></li><li><a target="_blank" href="https://open.spotify.com/show/0nLT0qByLhR8L6cR5rDZcV?si=b77223fdee9f465f" rel="noreferrer noopener">DevTalk with Kerry W. Lothrop</a></li><li><a target="_blank" href="https://open.spotify.com/show/5tz9eGgXtNHmq3WVD3EwYx?si=20d6af153d614b38" rel="noreferrer noopener">.NET Rocks!</a></li><li><a target="_blank" href="https://open.spotify.com/show/1GXN20wpTG0yWGc6PSKz3f?si=ec6670174e514541" rel="noreferrer noopener">The Productive C# Podcas</a>t</li></ol>
+
+
+
+<p>As you can see the list is not as huge as YouTube channels, but make sure you give it a try to listen to them. Let me know in the comment section below if I miss any channel to add.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>List of YouTube channels for .NET C# developers</title>
+		<link>https://shreyasjejurkar.github.io/testwebsite/2022/01/24/list-of-youtube-channels-for-net-csharp-developers/</link>
+		
+		<dc:creator><![CDATA[ShreyasJejurkar]]></dc:creator>
+		<pubDate>Mon, 24 Jan 2022 07:29:16 +0000</pubDate>
+				<category><![CDATA[Programming]]></category>
+		<category><![CDATA[.NET]]></category>
+		<category><![CDATA[dotnet]]></category>
+		<category><![CDATA[youtube]]></category>
+		<guid isPermaLink="false">https://mccshreyas.com/?p=720</guid>
+
+					<description><![CDATA[Following is the list of youtube channels that I have aggregated for .NET C# (Csharp) developers. I personally follow them every day and subscribed. Please note that this does not represent any kind of ranking. I would suggest going through them one by one looking at their content and playlist section and if you are [&#8230;]]]></description>
+										<content:encoded><![CDATA[
+<p>Following is the list of youtube channels that I have aggregated for .NET C# (Csharp) developers. I  personally follow them every day and subscribed. Please note that this does not represent any kind of ranking. </p>
+
+
+
+<p>I would suggest going through them one by one looking at their content and playlist section and if you are interested give them a sub! Along the time, I will keep this list updated, if I missed someone, please let me know in the comment section below! </p>
+
+
+
+<ol><li><a rel="noreferrer noopener" href="https://www.youtube.com/c/dotNET" target="_blank">Official .NET channel </a></li><li><a rel="noreferrer noopener" href="https://www.youtube.com/c/NETFoundation" target="_blank">.NET Foundation</a></li><li><a rel="noreferrer noopener" href="https://www.youtube.com/c/RawCoding" target="_blank">Raw Coding</a></li><li><a rel="noreferrer noopener" href="https://www.youtube.com/c/Elfocrash" target="_blank">Nick Chapsa</a></li><li><a rel="noreferrer noopener" href="https://www.youtube.com/user/IAmTimCorey" target="_blank">Tim Corey</a></li><li><a rel="noreferrer noopener" href="https://www.youtube.com/channel/UCRs-PO48PbbS0l7bBhbu5CA" target="_blank">Ak Academy</a></li><li><a rel="noreferrer noopener" href="https://www.youtube.com/c/shanselman" target="_blank">Scott Hanselman</a></li><li><a rel="noreferrer noopener" href="https://www.youtube.com/c/AngelSix" target="_blank">AngelSix</a></li><li><a rel="noreferrer noopener" href="https://www.youtube.com/c/BrianLagunas" target="_blank">Brian Lagunas</a></li><li><a rel="noreferrer noopener" href="https://www.youtube.com/c/Codewrinkles" target="_blank">Codewrinkles</a></li><li><a rel="noreferrer noopener" href="https://www.youtube.com/c/PhatBoyG" target="_blank">Chris Patterson</a></li><li><a rel="noreferrer noopener" href="https://www.youtube.com/c/CodingMilitia" target="_blank">Coding Militia</a></li><li><a rel="noreferrer noopener" href="https://www.youtube.com/c/CuriousDrive" target="_blank">Curious Drive</a></li><li><a rel="noreferrer noopener" href="https://www.youtube.com/c/DevMentors" target="_blank">DevMentors</a></li><li><a rel="noreferrer noopener" href="https://www.youtube.com/c/DmitriNesteruk" target="_blank">Dmitri Nesteruk</a></li><li><a rel="noreferrer noopener" href="https://www.youtube.com/c/DotNetCoreCentral" target="_blank">DotNet Core Central</a></li><li><a rel="noreferrer noopener" href="https://www.youtube.com/c/FrankLiuSoftware" target="_blank">Frank Liu</a></li><li><a rel="noreferrer noopener" href="https://www.youtube.com/c/GavinLon" target="_blank">Gavin Lon</a></li><li><a rel="noreferrer noopener" href="https://www.youtube.com/c/HassanHabib" target="_blank">Hassan Habib</a></li><li><a rel="noreferrer noopener" href="https://www.youtube.com/c/csharpfritz" target="_blank">Jeffery T. Fritz</a></li><li><a rel="noreferrer noopener" href="https://www.youtube.com/c/binarythistle" target="_blank">Les Jackson</a></li><li><a rel="noreferrer noopener" href="https://www.youtube.com/c/RahulNath" target="_blank">Rahul Nath</a></li><li><a rel="noreferrer noopener" href="https://www.youtube.com/channel/UC3RKA4vunFAfrfxiJhPEplw" target="_blank">CodeOpinion</a></li><li><a rel="noreferrer noopener" href="https://www.youtube.com/c/Dotnet-tricks" target="_blank">Dot Net Tricks</a></li><li><a rel="noreferrer noopener" href="https://www.youtube.com/c/Dotnetos" target="_blank">Dotnetos</a></li><li><a rel="noreferrer noopener" href="https://www.youtube.com/c/JamesMontemagno" target="_blank">James Montemagno</a></li><li><a rel="noreferrer noopener" href="https://www.youtube.com/c/NTFAQGuy" target="_blank">John Savill&#8217;s Technical Training</a></li><li><a rel="noreferrer noopener" href="https://www.youtube.com/c/Csharp-video-tutorialsBlogspot" target="_blank">kudvenkat </a></li><li><a rel="noreferrer noopener" href="https://www.youtube.com/c/visualstudio" target="_blank">Microsoft Visual Studio</a></li><li><a rel="noreferrer noopener" href="https://www.youtube.com/c/NDCConferences" target="_blank">NDC Conferences</a></li><li><a rel="noreferrer noopener" href="https://www.youtube.com/c/XamarinDevelopers" target="_blank">Xamarin Developers</a></li><li><a rel="noreferrer noopener" href="https://www.youtube.com/c/Ardalis" target="_blank">Ardalis</a></li><li><a rel="noreferrer noopener" href="https://www.youtube.com/GeraldVersluis" target="_blank">Gerald Versluis</a></li><li><a rel="noreferrer noopener" href="https://www.youtube.com/c/AndreaAngella" target="_blank">Andrea Angella</a></li><li><a rel="noreferrer noopener" href="https://www.youtube.com/c/WesDoyle" target="_blank">Wes Doyle</a></li><li><a rel="noreferrer noopener" href="https://www.youtube.com/channel/UC5P4o4uvwae7r3_xvaKTutA" target="_blank">Peter</a></li><li><a href="https://www.youtube.com/c/RainerStropek11" target="_blank" rel="noreferrer noopener">Rainer Stropek</a></li></ol>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>How to &#8211; Change last git commit message.</title>
+		<link>https://shreyasjejurkar.github.io/testwebsite/2021/04/25/how-to-change-last-git-commit-message/</link>
+		
+		<dc:creator><![CDATA[ShreyasJejurkar]]></dc:creator>
+		<pubDate>Sun, 25 Apr 2021 08:39:42 +0000</pubDate>
+				<category><![CDATA[Programming]]></category>
+		<category><![CDATA[commit]]></category>
+		<category><![CDATA[git]]></category>
+		<category><![CDATA[version-control]]></category>
+		<guid isPermaLink="false">https://mccshreyas.com/?p=654</guid>
+
+					<description><![CDATA[In today’s post, I will walk you through the steps needed to change the last commit message in git version control.&#160;&#160; If you don’t know, git is a very popular, distributed version control system often used in software development to intelligently manages code changes which are done by several people in a large software project.&#160;&#160; [&#8230;]]]></description>
+										<content:encoded><![CDATA[
+<p>In today’s post, I will walk you through the steps needed to change the last commit message in git version control.&nbsp;&nbsp;</p>
+
+
+
+<p>If you don’t know, git is a very popular, distributed version control system often used in software development to intelligently manages code changes which are done by several people in a large software project.&nbsp;&nbsp;</p>
+
+
+
+<p>Most often I face the problem where I need to change my commit message after I make a commit with a bunch of changes. If you are using the git command-line interface, just like I do, then the following are the steps that are needed to change the commit message.&nbsp;&nbsp;</p>
+
+
+
+<p class="has-medium-font-size" value="&lt;amp-fit-text layout=&quot;fixed-height&quot; min-font-size=&quot;6&quot; max-font-size=&quot;72&quot; height=&quot;80&quot;&gt;&lt;strong&gt;Steps -&nbsp;&lt;/strong&gt;&lt;/amp-fit-text&gt;"><strong>Steps &#8211;&nbsp;</strong></p>
+
+
+
+<ol><li>First, check the history with <code>git log –oneline</code> to check your previous commit message.&nbsp;&nbsp;</li></ol>
+
+
+
+<div class="wp-block-image"><figure class="aligncenter size-large is-resized"><a href="https://mccshreyas.files.wordpress.com/2021/04/image.png"><img decoding="async" src="https://mccshreyas.files.wordpress.com/2021/04/image.png?w=866" alt="" class="wp-image-656" width="690" height="218" srcset="https://shreyasjejurkar.github.io/testwebsite/wp-content/uploads/2021/04/image.png 866w, https://shreyasjejurkar.github.io/testwebsite/wp-content/uploads/2021/04/image-300x95.png 300w, https://shreyasjejurkar.github.io/testwebsite/wp-content/uploads/2021/04/image-768x243.png 768w" sizes="(max-width: 690px) 100vw, 690px" /></a><figcaption>git local history<br><br></figcaption></figure></div>
+
+
+
+<p>As you can see above &#8220;Added <code>GetEmailService()</code> function&#8221; is the last commit message. I want to change it to a more specific message.</p>
+
+
+
+<p>2. To change that run following the git command. Following is the format of that command&nbsp;&nbsp;</p>
+
+
+
+<p><code>git commit --amend -m "your new message" </code><br><br>In my case following is my new message.</p>
+
+
+
+<div class="wp-block-image"><figure class="aligncenter size-large"><a href="https://mccshreyas.files.wordpress.com/2021/04/image-1.png"><img decoding="async" width="963" height="75" src="https://mccshreyas.files.wordpress.com/2021/04/image-1.png?w=963" alt="" class="wp-image-660" srcset="https://shreyasjejurkar.github.io/testwebsite/wp-content/uploads/2021/04/image-1.png 963w, https://shreyasjejurkar.github.io/testwebsite/wp-content/uploads/2021/04/image-1-300x23.png 300w, https://shreyasjejurkar.github.io/testwebsite/wp-content/uploads/2021/04/image-1-768x60.png 768w" sizes="(max-width: 963px) 100vw, 963px" /></a><figcaption>Change last git commit message</figcaption></figure></div>
+
+
+
+<p>3. Once done, check your history with <code>git log –-oneline</code>, your last message commit message will be updated with the new one.  </p>
+
+
+
+<div class="wp-block-image"><figure class="aligncenter size-large"><a href="https://mccshreyas.files.wordpress.com/2021/04/image-2.png"><img decoding="async" width="1011" height="169" src="https://mccshreyas.files.wordpress.com/2021/04/image-2.png?w=1011" alt="" class="wp-image-662" srcset="https://shreyasjejurkar.github.io/testwebsite/wp-content/uploads/2021/04/image-2.png 1011w, https://shreyasjejurkar.github.io/testwebsite/wp-content/uploads/2021/04/image-2-300x50.png 300w, https://shreyasjejurkar.github.io/testwebsite/wp-content/uploads/2021/04/image-2-768x128.png 768w" sizes="(max-width: 1011px) 100vw, 1011px" /></a><figcaption>Updated message </figcaption></figure></div>
+
+
+
+<p>As you can see it’s quite easy to change the last commit message in one git command.<br>For me these changes were not pushed to the remote repository, but if you have already pushed commits to the remote repository and wanted to update the commit message on the remote repository then along with the above-mentioned steps at the end execute the following command to push new commit message to the remote repository.<br><br><code>git push --force branch-name</code></p>
+
+
+
+<p>Make sure to change the branch name with your branch name, to push to that branch. Once done the commit message will be updated in the remote branch as well.</p>
+
+
+
+<p>So, this was a short and simple post to the most occurring problem while working with the git version control system. I hope you liked it, if you have any questions or any doubts, please let me in the comment section below.</p>
+
+
+
+<p>Thanks for reading…</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Clean Architecture with C# .NET</title>
+		<link>https://shreyasjejurkar.github.io/testwebsite/2021/04/22/clean-architecture-with-csharp-net/</link>
+		
+		<dc:creator><![CDATA[ShreyasJejurkar]]></dc:creator>
+		<pubDate>Thu, 22 Apr 2021 08:11:28 +0000</pubDate>
+				<category><![CDATA[Programming]]></category>
+		<category><![CDATA[.NET]]></category>
+		<category><![CDATA[architecture]]></category>
+		<category><![CDATA[csharp]]></category>
+		<guid isPermaLink="false">https://mccshreyas.com/?p=629</guid>
+
+					<description><![CDATA[Today, in this post I will walk you through the basics and important concepts related to Clean architecture with .NET.&#160;&#160; What is Clean Architecture Clean architecture is the next iteration of the very well know architecture patterns that we used to see in the past like Hexagonal, Onion, and Screaming architecture. This architecture is by [&#8230;]]]></description>
+										<content:encoded><![CDATA[
+<p>Today, in this post I will walk you through the basics and important concepts related to Clean architecture with .NET.&nbsp;&nbsp;</p>
+
+
+
+<p><strong>What is Clean Architecture</strong></p>
+
+
+
+<p>Clean architecture is the next iteration of the very well know architecture patterns that we used to see in the past like Hexagonal, Onion, and Screaming architecture. This architecture is by no means a silver bullet or first-class solution to all architecture problems or complexities that we face today. This architecture just tries to lower the complexity, coupling between layers, and tries to increases cohesion.&nbsp;&nbsp;</p>
+
+
+
+<p>The important factor of this architecture is the domain-centric nature. In past, we used to see the database-centric architecture or mostly consider as 3-layer architecture. In those at the very bottom we have the database (SQL or MySQL) then we have database access layer (ORM) then business logic layer (Service layer) and then at the top we have the presentation layer (UI, MVC). This architecture is OK for simple apps and is used widely today as well. But for complex domains and continuously changing requirements in today’s world, this architecture falls apart because of its tight coupling between layers. As in that architecture, each layer knows what its dependent layer is doing. So, if there any change requirement, the cost of change spans across this all layer, and hence it is hard to maintain and keep track of.&nbsp;&nbsp;</p>
+
+
+
+<p>So clean architecture tries to solve this problem by keeping the domain in the center. So, although if there any change we can make a change to the domain without affecting another layer much or lowering the cost of change. And also, the important point to note is that all dependencies point inwards in the layer and there will no outward dependencies. And if the inner layer wants to access services from the outer layer, it will depend upon abstractions defined by the inner layer and not on the concrete implementation.&nbsp;&nbsp;</p>
+
+
+
+<p>Now we will go to each layer one by one and we will talk about a simple example of a School Management System so that you can understand what will go in each layer and how they contribute to the overall system. </p>
+
+
+
+<figure class="wp-block-image size-large"><a href="https://mccshreyas.files.wordpress.com/2021/07/cleanarchitecture-1.png"><img decoding="async" width="971" height="675" src="https://mccshreyas.files.wordpress.com/2021/07/cleanarchitecture-1.png?w=971" alt="" class="wp-image-680" srcset="https://shreyasjejurkar.github.io/testwebsite/wp-content/uploads/2021/07/cleanarchitecture-1.png 971w, https://shreyasjejurkar.github.io/testwebsite/wp-content/uploads/2021/07/cleanarchitecture-1-300x209.png 300w, https://shreyasjejurkar.github.io/testwebsite/wp-content/uploads/2021/07/cleanarchitecture-1-768x534.png 768w" sizes="(max-width: 971px) 100vw, 971px" /></a></figure>
+
+
+
+<p></p>
+
+
+
+<p></p>
+
+
+
+<p><strong>Domain Layer&nbsp;</strong></p>
+
+
+
+<p>This is the center of this architecture. This will contain all domain entities, custom exceptions, constant values, and anything related to the core domain. This layer contains enterprise-wide logic, so this might be shared across multiple applications as a Nuget package, so make sure to include the things which are core in the domain. For example, in our School Management System, the <code>Student</code>, <code>Teacher</code>, <code>Class</code> will be the domain entities because without these entities the School Management System won&#8217;t even work and won’t even make sense. Similarly, <code>StudentNotFoundException</code>, <code>ClassroomFullException</code> will be the custom exception that we can have in this layer. Along with this, we can have DomainEvents as well like <code>StudentRegisteredEvent</code>, <code>ClassroomFullEvent</code>, so that other parts of the application can subscribe to this event and can perform their task based on business logic.&nbsp;&nbsp;</p>
+
+
+
+<pre class="wp-block-syntaxhighlighter-code">namespace CleanArchitecture.Domain
+{
+    public class Student
+    {
+         public int Id { get; set; }
+         public string Name { get; set; }
+         // other domain fields
+    }
+}</pre>
+
+
+
+<p><strong>Application Layer&nbsp;</strong></p>
+
+
+
+<p>This is an important layer in this architecture because this is where you will write your business logic based on various use cases and requirements. As this layer depends on the domain layer, you will have a project reference of the domain project on this project so that this layer will be able to access domain-related things. In contrast to Service-Repository architecture, this is your Service layer. This layer will get input data from the presentation layer and will do processing on it based on business logic and at the end ultimately it will query or save data to the database by using repository abstractions.&nbsp;&nbsp;</p>
+
+
+
+<p>Important to note that this layer won’t be having an idea of the type of database which application is using. This layer will just depend upon the abstractions of the repository and not on the concrete implementation. The abstraction and corresponding concrete implementation will be configured together using a dependency injection container. And the concrete implementation will reside in the Persistence project which will talk in detail in a later section. This layer will also have corresponding handlers or subscribers for various domain events, and which will perform the operation as per the requirement.&nbsp;&nbsp;</p>
+
+
+
+<pre class="wp-block-syntaxhighlighter-code">namespace CleanArchitecture.Application
+{
+    public class StudentService : IStudentService
+    {
+         private IStudentRepository _studentRepository;
+         public StudentService(IStudentRepository studentRepository)
+         {
+             _studentRepository = studentRepository;
+         }
+         public void SaveStudent(SaveStudentRequest request)
+         {
+               // validate request data based on business logic
+               // and create domain student object
+               var newStudent = StudentValidator.validate(request);
+               _studentRepository.Save(newStudent);
+         }
+    }
+}</pre>
+
+
+
+<p><strong>Infrastructure Layer&nbsp;</strong></p>
+
+
+
+<p>This layer contains anything external. This layer will have things that are not directly related to your application domain but are needed as part of specific functionality. Consider in our School Management System, we want to notify each student about the timetable of the exam via their emails. So, to do so we need to use NuGet packages which makes email sending tasks easier, for example, the SendGrid NuGet package. So, the concrete implementation will reside in this project. And if you decide to put interface abstractions, then you can put that in the application layer. So that you can able to call those infrastructure services from business logic using abstractions.</p>
+
+
+
+<pre class="wp-block-syntaxhighlighter-code">namespace CleanArchitecture.Infrastructure
+{
+    public class SendGridMailService : IMailService
+    {
+         public void SendMail(MailRequest request)
+         {
+              // mail sending logic.
+         }
+    }
+}</pre>
+
+
+
+<p><strong>Persistence Layer</strong>&nbsp;</p>
+
+
+
+<p>This layer is our database access layer. This layer will have a concrete implementation of the repository abstractions which are defined by the application layer. In clean architecture, only this layer has knowledge about the actual underlying database provider. So, in the future, if there any need to change the database provider from let’s say SQL Server to MySQL, only changes will be made in this layer without affecting another layer. Or in other example, you want to use Dapper instead of Entity Framework, then you can swap or change implementation of abstractions without affecting other part of the system. From .NET perspective Entity Framework DbContext, Dapper related things and migrations will reside in this project.&nbsp;&nbsp;</p>
+
+
+
+<pre class="wp-block-syntaxhighlighter-code">namespace CleanArchitecture.Persistence
+{
+    public class StudentRepository : IStudentRepository
+    {
+         private ApplicationDbContext _context;
+         public StudentRepository(ApplicationDbContext context) 
+         {
+             _context = context;
+         }
+
+         public void SaveStudent(Student student)
+         {
+             _context.Students.Add(student);
+             _context.SaveChanges();
+         }
+    }
+}</pre>
+
+
+
+<p><strong>Presentation Layer</strong>&nbsp;</p>
+
+
+
+<p>Last but not least, the presentation layer is the outermost layer in Clean Architecture. From this layer, user will be able to interact with the whole system. So, we can consider this layer as the user input layer. This might be your API, MVC, or even blazor app. Point to note in the real world, there might be multiple presentation layers in the system which in turn contact the application layer for input and output. The presentation layer won&#8217;t be having any business or application logic, this layer will just accept an incoming request (mostly HTTP API request) and forwards it to the application layer for processing and waits for the reply from the application layer, once done it will return the data to the user if any.&nbsp;&nbsp;</p>
+
+
+
+<pre class="wp-block-syntaxhighlighter-code">namespace CleanArchitecture.Presentation
+{
+    [ApiController]
+    [Route("/api/[controller]")]
+    public class StudentController : ControllerBase
+    {
+         private IStudentService _service;
+         public StudentRepository(IStudentService service) 
+         {
+             _service = service;
+         }
+
+         public IActionResult SaveStudent(NewStudentRequest request)
+         {
+             _service.SaveStudent(request);
+             return Ok();
+         }
+    }
+}</pre>
+
+
+
+<p>As you can see clean architecture is quite easy to understand. I will suggest you take a look at the following .NET template which is developed by Jason Tylor for Clean architecture implementation, so that you will have a head start in your project.&nbsp;</p>
+
+
+
+<p><a rel="noreferrer noopener" target="_blank" href="https://github.com/jasontaylordev/CleanArchitecture">https://github.com/jasontaylordev/CleanArchitecture</a>&nbsp;</p>
+
+
+
+<p>Thanks for reading, if you any questions or doubts please let me know in the comment section below.&nbsp;&nbsp;</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>How to fix &#8211; Could not found one or more components. please reinstall the application error.</title>
+		<link>https://shreyasjejurkar.github.io/testwebsite/2021/04/16/how-to-fix-could-not-found-one-or-more-components-please-reinstall-the-application-error/</link>
+		
+		<dc:creator><![CDATA[ShreyasJejurkar]]></dc:creator>
+		<pubDate>Fri, 16 Apr 2021 11:38:12 +0000</pubDate>
+				<category><![CDATA[Programming]]></category>
+		<category><![CDATA[Windows]]></category>
+		<category><![CDATA[sql server 2014]]></category>
+		<category><![CDATA[Visual Studio 2010]]></category>
+		<guid isPermaLink="false">https://mccshreyas.wordpress.com/?p=595</guid>
+
+					<description><![CDATA[Recently I was working on one of the projects where I was using SQL Server 2014 as a database and Visual Studio 2019. And suddenly I started getting the above error when I tried to open SQL Server 2014. I tried repairing the installation of SQL Server 2014 via the installer, but it did not [&#8230;]]]></description>
+										<content:encoded><![CDATA[
+<p>Recently I was working on one of the projects where I was using SQL Server 2014 as a database and Visual Studio 2019. And suddenly I started getting the above error when I tried to open SQL Server 2014. I tried repairing the installation of SQL Server 2014 via the installer, but it did not work, and I was getting the same error as before.&nbsp;</p>
+
+
+
+<p>So I got into thinking, like what I did before I was getting this error, then I realized that I have deleted the &#8220;Visual Studio 2010&#8221; folder from my Program Files (x86) folder. Because I was not using Visual Studio 2010, I was using the 2019 edition so technically, I don&#8217;t need that folder and its corresponding files to work, so to get some free space I deleted those folders and this is where I made the mistake.&nbsp;</p>
+
+
+
+<p>So after some research, I found that Visual Studio 2014 behind the scenes uses Visual Studio 2010 UI components for its rendering and its controls. That&#8217;s why if you compare the &#8220;Solution Explorer&#8221; UI from Visual Studio 2010, then it looks somewhat similar to &#8220;Object Explorer&#8221; in SQL Server 2014. Because they are the same under the hood and only the content is different.</p>
+
+
+
+<p>So does that mean to work with SQL Server 2014 I need to install Visual Studio 2010 although if I am not using it !? No, the UI (&#8220;UI Shell&#8221;) is a separate component from Visual Studio and SQL Server. As part of their installation, they install this component. And interestingly as it packs separately from these products so we can separately download that as well and install it. The component name is&nbsp;<strong>Visual Studio Isolated Shell</strong>.&nbsp;</p>
+
+
+
+<p>You can download the shell from the below link.&nbsp;</p>
+
+
+
+<p><a href="https://visualstudio.microsoft.com/vs/older-downloads/isolated-shell/" target="_blank" rel="noreferrer noopener">https://visualstudio.microsoft.com/vs/older-downloads/isolated-shell/</a></p>
+
+
+
+<p>But on that page when you accept a license, you will see a different version of that shell ranging from Visual Studio 2010 to 2015. So this is where we need to make the decision, and the following list might help to make that.&nbsp;</p>
+
+
+
+<p>1. SQL Server 2014 -&gt; Visual Studio 2010 isolated shell.&nbsp;<br>2. SQL Server 2016 -&gt; Visual Studio 2015 isolated shell.&nbsp;</p>
+
+
+
+<p>So make sure to install the correct shell, and give it a try to open SQL Server. In my case, it worked, but in your case, if it didn&#8217;t, then after installation of shell, repair the SQL Server installation and try again that will really help and will eventually solve your problem.&nbsp;<br><br>Thanks for reading..!</p>
+
+
+
+<p> </p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>
